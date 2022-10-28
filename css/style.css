@@ -1,0 +1,171 @@
+/* ----------------------------- */
+/* ------- SPECIFICATION ------- */
+/* ----------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0;
+    background-color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1294px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Readex Pro', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 58px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 28px;
+}
+
+h5 {
+	font-size: 22px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a, button, input {
+	transition: all 0.4s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+	outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.expl-btn {
+    padding: 14px 53px;
+    font-size: 18px;
+    border-radius: 200px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+
+.expl-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* HEADER */
+header nav{
+    padding: 30px 0;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+}
+
+header .header__link {
+    text-transform: uppercase;
+}
+
+header .links > *:not(:last-child) {
+    margin-right: 33px;
+}
+
+header .links li::after {
+    content: " ";
+    background-image: url(../img/arrow-hover.svg);
+    display: block;
+    width: 12px;
+    height: 8px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+header .links li:hover::after{
+    opacity: 1;
+}
+
+header .buttons button {
+    border: none;
+    background-color: transparent;
+}
+
+header .buttons button:hover {
+    transform: scale(1.2);
+}
+
+header .buttons {
+    margin-right: 28px;
+}
+
+header .buttons > *:not(:last-child) {
+    margin-right: 21px;
+}
+
+header .banner {
+    background-color: #DCE5E2;
+    padding: 0 56px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+}
+
+header .banner h1 {
+    width: 588px;
+}
+
+header .banner .info p {
+    font-size: 16px;
+    max-width: 565px;
+    margin: 19px 0 30px;
+}
+
+header .banner .images img {
+    display: block;
+}
