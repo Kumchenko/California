@@ -150,10 +150,12 @@ header .buttons > *:not(:last-child) {
 
 header .banner {
     background-color: #DCE5E2;
-    padding: 0 56px;
+    padding: /*145px*/ 0 56px /*127px*/;
     border-radius: 32px;
     display: flex;
     align-items: center;
+    max-height: 550px;
+    overflow: hidden;
 }
 
 header .banner h1 {
@@ -166,6 +168,107 @@ header .banner .info p {
     margin: 19px 0 30px;
 }
 
-header .banner .images img {
-    display: block;
+header .image {
+    overflow: auto;
+}
+
+.categories .container {
+    padding-top: 52px;
+}
+
+.categories .categories_header {
+    text-align: center;
+}
+
+.categories .categories_desc {
+    text-align: center;
+    max-width: 625px;
+    font-family: 'Readex Pro', sans-serif;
+    margin: 9px auto 55px;
+}
+
+.categories .tabs {
+    margin: 0 auto;
+    display: flex;
+}
+
+.categories .tabs .tab {
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.categories .tab__desc {
+    font-size: 15px;
+}
+
+.categories .tabs .hor {
+    width: 50%;
+    text-align: right;
+}
+
+.categories .tabs .vert {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.categories .tabs .vert .tab:not(:first-child) {
+    margin-left: 16px;
+}
+
+.categories .tabs .hor .tab:not(:first-child) {
+    margin-top: 50px;
+}
+
+.categories .tabs .hor .tab:first-child {
+    padding-bottom: 38px;
+}
+
+.categories .tabs .vert .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories .tabs .hor .tab_flex {
+    display: flex;
+    align-items: center;
+}
+
+.categories .tab__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categories .tab__img_laptops {
+    background-image: url(../img/laptops.png);
+    height: 377px;
+    margin: 0 97px 0 42px;
+}
+
+.categories .tab__img_watches {
+    background-image: url(../img/watches.png);
+    width: 90%;
+    height: 270px;
+    margin-left: 42px;
+}
+
+.categories .tab__img_phones {
+    background-image: url(../img/phones.png);
+    height: 367px;
+    margin-bottom: 42px;
+    background-position: left;
+    left: 16px;
+}
+
+.categories .tab__img_tablets {
+    background-image: url(../img/tablets.png);
+    height: 425px;
+    margin-top: 42px;
+}
+
+.categories .tab__desc, .categories .tab__head {
+    padding: 0 42px;
 }
