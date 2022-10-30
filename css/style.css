@@ -51,6 +51,10 @@ h5 {
 	font-size: 22px;
 }
 
+h6 {
+    font-size: 13px;
+}
+
 a, a:hover, a:active {
 	text-decoration: none;
     color: inherit;
@@ -176,14 +180,13 @@ header .image {
     padding-top: 52px;
 }
 
-.categories .categories_header {
+.categories .categories__header {
     text-align: center;
 }
 
-.categories .categories_desc {
+.categories .categories__desc {
     text-align: center;
     max-width: 625px;
-    font-family: 'Readex Pro', sans-serif;
     margin: 9px auto 55px;
 }
 
@@ -271,4 +274,206 @@ header .image {
 
 .categories .tab__desc, .categories .tab__head {
     padding: 0 42px;
+}
+
+.popular .container {
+    padding-top: 105px;
+}
+
+.popular .popular__header {
+    text-align: center;
+}
+
+.popular .popular__desc {
+    text-align: center;
+    margin: 9px auto 31px;
+}
+
+.popular .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.popular .item {
+    width: 23%;
+}
+
+.popular .item img {
+    max-width: 100%;
+    padding: 28px;
+    aspect-ratio: 247/214;
+    object-fit: contain;
+}
+
+.popular .item p {
+    font-size: 14px;
+    padding-right: 41px;
+    margin: 9px 0 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.popular .item span {
+    font-size: 18px;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+}
+
+.best .container {
+    padding-top: 52px;
+}
+
+.best .best__header {
+    text-align: center;
+}
+
+.best .best__desc {
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin: 9px auto 31px;
+}
+
+.best .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best .item {
+    max-width: 33%;
+    background-color: #F8F9FA;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 29px 0;
+}
+
+.best .item button {
+    margin: 30px auto;
+    padding: 14px 63px;
+}
+
+.best .item img {
+    width: 355px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.ideas .container {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideas .ideas__header {
+    text-align: center;
+}
+
+.ideas .ideas__desc {
+    text-align: center;
+    margin-top: 9px;
+}
+
+.ideas .info {
+    display: flex;
+    margin: 56px auto 75px;
+}
+
+.ideas .info img {
+    border-radius: 16px;
+    width: 48%;
+    max-width: 620px;
+    aspect-ratio: 620/420;
+    object-fit: cover;
+}
+
+.ideas .info .text {
+    padding: 14px 35px;
+}
+
+.ideas .info .text p {
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+.ideas .ideas__all {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideas .ideas__all:after {
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 26px;
+    margin-left: 2px;
+    background-image: url(../img/link.svg);
+}
+
+.search .container {
+    padding: 80px 0 68px;
+}
+
+.search .search__header {
+    text-align: center;
+}
+
+.search .search__bar {
+    background: #F8F9FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    padding: 15px 17px 16px;
+    max-width: 650px;
+    margin: 16px auto 18px;
+}
+
+.search .search__bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search .search__bar button {
+    width: 30px;
+    height: 29px;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.search .search__bar input {
+    margin-left: 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
+.search .search_suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.search .search_suggestions button {
+    padding: 12px 22px 13px;
+    background: transparent;
+    border: 1px solid #C5C5C5;
+    border-radius: 200px;
 }
