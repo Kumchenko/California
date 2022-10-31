@@ -2,6 +2,8 @@
 /* ------- SPECIFICATION ------- */
 /* ----------------------------- */
 
+/* BASE */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
@@ -94,7 +96,7 @@ button {
     color: #fff;
 }
 
-/* HEADER */
+/* HEADER Section */
 header nav{
     padding: 30px 0;
 }
@@ -155,7 +157,7 @@ header .buttons > *:not(:last-child) {
 
 header .banner {
     background-color: #DCE5E2;
-    padding: /*145px*/ 0 56px /*127px*/;
+    padding: 0 56px;
     border-radius: 32px;
     display: flex;
     align-items: center;
@@ -176,6 +178,8 @@ header .banner .info p {
 header .image {
     overflow: auto;
 }
+
+/* CATEGORIES Section */
 
 .categories .container {
     padding-top: 52px;
@@ -277,6 +281,8 @@ header .image {
     padding: 0 42px;
 }
 
+/* POPULAR Section */
+
 .popular .container {
     padding-top: 105px;
 }
@@ -301,10 +307,12 @@ header .image {
 }
 
 .popular .item img {
-    max-width: 100%;
+    width: 100%;
+    height: 214px;
     padding: 28px;
-    aspect-ratio: 247/214;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 .popular .item p {
@@ -323,6 +331,8 @@ header .image {
     bottom: 1px;
     left: 0px;
 }
+
+/* BEST Section */
 
 .best .container {
     padding-top: 52px;
@@ -364,6 +374,8 @@ header .image {
     height: 250px;
     object-fit: contain;
 }
+
+/* IDEAS Section */
 
 .ideas .container {
     padding-top: 80px;
@@ -419,6 +431,8 @@ header .image {
     margin-left: 2px;
     background-image: url(../img/link.svg);
 }
+
+/* SEARCH Section */
 
 .search .container {
     padding: 80px 0 68px;
@@ -483,6 +497,8 @@ header .image {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* MAIL Section */
+
 .mail .banner {
     max-width: 935px;
     margin: 0 auto;
@@ -542,6 +558,8 @@ header .image {
 .mail .banner .bar button:hover{
     opacity: 0.7;
 }
+
+/* FOOTER Section */
 
 footer {
     margin-top: 24px;

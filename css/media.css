@@ -1,0 +1,58 @@
+/* =========================== */
+/* ========== MEDIA ========== */
+/* ========= QUERIES ========= */
+/* =========================== */
+
+/* ====== 1400-1200px ====== */
+@media screen and (max-width: 1400px) {
+
+    /* ====== BASE ====== */
+    .container {
+        width: 1140px;
+    }
+
+}
+
+
+/* ====== 1200-992px ====== */
+@media screen and (max-width: 1200px) {
+
+    /* ====== BASE ====== */
+    .container {
+        width: 960px;
+    }
+
+}
+
+
+/* ====== 768-992px ====== */
+@media screen and (max-width: 992px) {
+
+    /* ====== BASE ====== */
+    .container {
+        width: 715px;
+    }
+
+}
+
+
+/* ====== 576-768px ====== */
+@media screen and (max-width: 768px) {
+    
+    /* ====== BASE ====== */
+    .container {
+        width: 520px;
+    }
+    
+}
+
+
+/* ====== 320-576px ====== */
+@media screen and (max-width: 576px) {
+    
+    /* ====== BASE ====== */
+    .container {
+        width: 310px;
+    }
+
+}
