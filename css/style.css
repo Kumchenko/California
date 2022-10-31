@@ -546,5 +546,64 @@ header .image {
 footer {
     margin-top: 24px;
     border-top: 1px solid #DCE5E2;
-    padding-top: 50px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 0 79px;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #DCE5E2;
+}
+
+footer nav .about {
+    width: 304px;
+}
+
+footer nav .about__desc {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+footer nav .list h5 {
+    margin-bottom: 20px;
+}
+
+footer nav .list li {
+    font-size: 17px;
+}
+
+footer nav .list li:not(:first-child) {
+    margin-top: 15px;
+}
+
+footer .credentials {
+    padding-top: 53px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .credentials div {
+    display: flex;
+}
+
+footer .credentials div span {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+footer .credentials div a {
+    margin-left: 7px;
+    display: flex;
+}
+
+footer .credentials div a:after {
+    content: " ";
+    width: 21px;
+    height: 18px;
+    margin-left: 3px;
+    background-image: url(../img/link-thin.svg);
 }
