@@ -37,6 +37,7 @@ h1 {
 
 h2 {
 	font-size: 42px;
+    margin-bottom: 9px;
 }
 
 h3 {
@@ -187,7 +188,7 @@ header .image {
 .categories .categories__desc {
     text-align: center;
     max-width: 625px;
-    margin: 9px auto 55px;
+    margin: 0 auto 55px;
 }
 
 .categories .tabs {
@@ -286,7 +287,7 @@ header .image {
 
 .popular .popular__desc {
     text-align: center;
-    margin: 9px auto 31px;
+    margin-bottom: 31px;
 }
 
 .popular .items {
@@ -335,7 +336,7 @@ header .image {
     font-family: 'Readex Pro', sans-serif;
     text-align: center;
     font-size: 13px;
-    margin: 9px auto 31px;
+    margin-bottom: 31px;
 }
 
 .best .items {
@@ -476,4 +477,74 @@ header .image {
     background: transparent;
     border: 1px solid #C5C5C5;
     border-radius: 200px;
+}
+
+.search .search_suggestions button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mail .banner {
+    max-width: 935px;
+    margin: 0 auto;
+    background-color: #DCE5E2;
+    border-radius: 16px;
+    padding: 47px 40px 43.5px;
+}
+
+.mail .banner .mail__header {
+    text-align: center;
+}
+
+.mail .banner .mail__desc {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.mail .banner .mail__img {
+    width: 233px;
+    height: 200px;
+    object-fit: contain;
+    margin: 14.5px auto 13.5px;
+    display: block;
+}
+
+.mail .banner .bar {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 54px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.mail .banner .bar input {
+    width: 100%;
+    padding: 16px 33px 17px 32px;
+    background-color: transparent;
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
+.mail .banner .bar button{
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 16px 33px 17px 32px;
+    max-height: 100%;
+    outline: none;
+    border: none;
+}
+
+.mail .banner .bar button:hover{
+    opacity: 0.7;
+}
+
+footer {
+    margin-top: 24px;
+    border-top: 1px solid #DCE5E2;
+    padding-top: 50px;
 }
