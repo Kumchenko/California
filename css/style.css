@@ -14,12 +14,15 @@
     position: relative;
 }
 
-body {
+html {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
-    color: #000;
     letter-spacing: 0;
+}
+
+body {
+    color: #000;
     background-color: #fff;
 }
 
@@ -98,9 +101,7 @@ button {
 
 /* HEADER Section */
 header nav{
-    padding: 30px 0;
-}
-header nav {
+    padding: 27px 0 31px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,10 +150,11 @@ header .buttons button:hover {
 
 header .buttons {
     margin-right: 28px;
+    display: flex;
 }
 
 header .buttons > *:not(:last-child) {
-    margin-right: 21px;
+    margin-right: 17px;
 }
 
 header .banner {
@@ -160,23 +162,52 @@ header .banner {
     padding: 0 56px;
     border-radius: 32px;
     display: flex;
-    align-items: center;
     max-height: 550px;
     overflow: hidden;
+}
+
+header .banner .banner__btn{
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 26px;
+    top: calc(50% - 13px);
+    background-color: transparent;
+    border: none;
+}
+
+header .banner .banner__prev{
+    background-image: url(../img/arrow-left-banner.svg);
+    left: 18px;
+}
+
+header .banner .banner__next{
+    background-image: url(../img/arrow-left-banner.svg);
+    transform: rotate(180deg);
+    right: 18px;
 }
 
 header .banner h1 {
     width: 588px;
 }
 
+header .banner .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 45px 0;
+}
+
 header .banner .info p {
     font-size: 16px;
     max-width: 565px;
-    margin: 19px 0 30px;
+    margin: 24px 0 25px;
 }
 
 header .image {
     overflow: auto;
+    object-fit: cover;
 }
 
 /* CATEGORIES Section */
@@ -203,6 +234,7 @@ header .image {
 .categories .tabs .tab {
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    top: 0;
 }
 
 .categories .tab__desc {
@@ -221,27 +253,53 @@ header .image {
     margin-left: 16px;
 }
 
-.categories .tabs .vert .tab:not(:first-child) {
-    margin-left: 16px;
-}
-
 .categories .tabs .hor .tab:not(:first-child) {
     margin-top: 50px;
 }
 
-.categories .tabs .hor .tab:first-child {
-    padding-bottom: 38px;
+.categories .tabs .vert .tab:not(:first-child) {
+    margin-left: 16px;
+}
+
+.categories .tabs .hor .tab {
+    padding: 0 42px;
+    transition: top 0.4s ease;
 }
 
 .categories .tabs .vert .tab {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: top 0.6s ease;
+}
+
+.categories .tabs .tab:nth-child(odd):hover {
+    top: -22px;
+}
+
+.categories .tabs .tab:nth-child(even):hover {
+    top: 22px;
+}
+
+.categories .tabs .tab .tab__img {
+    transition: transform 1s ease;
+}
+
+.categories .tabs .tab:hover .tab__img {
+    transform: scale(1.2);
+}
+
+.categories .tabs .hor .tab_big {
+    padding-bottom: 38px;
 }
 
 .categories .tabs .hor .tab_flex {
     display: flex;
     align-items: center;
+}
+
+.categories .tabs .vert .tab__head, .categories .tabs .vert .tab__desc {
+    padding: 0 32px;
 }
 
 .categories .tab__img {
@@ -253,14 +311,13 @@ header .image {
 .categories .tab__img_laptops {
     background-image: url(../img/laptops.png);
     height: 377px;
-    margin: 0 97px 0 42px;
+    max-width: 500px;
 }
 
 .categories .tab__img_watches {
     background-image: url(../img/watches.png);
     width: 90%;
     height: 270px;
-    margin-left: 42px;
 }
 
 .categories .tab__img_phones {
@@ -277,14 +334,10 @@ header .image {
     margin-top: 42px;
 }
 
-.categories .tab__desc, .categories .tab__head {
-    padding: 0 42px;
-}
-
 /* POPULAR Section */
 
 .popular .container {
-    padding-top: 105px;
+    padding-top: 103px;
 }
 
 .popular .popular__header {
@@ -308,15 +361,19 @@ header .image {
 
 .popular .item img {
     width: 100%;
-    height: 214px;
+    height: 272px;
     padding: 28px;
     object-fit: contain;
     margin: 0 auto;
     display: block;
 }
 
+.popular .item h5 {
+    margin-top: 8px;
+}
+
 .popular .item p {
-    font-size: 14px;
+    font-size: 1rem;
     padding-right: 41px;
     margin: 9px 0 30px;
     display: -webkit-box;
@@ -326,7 +383,7 @@ header .image {
 }
 
 .popular .item span {
-    font-size: 18px;
+    font-size: 1.285rem;
     position: absolute;
     bottom: 1px;
     left: 0px;
@@ -335,7 +392,7 @@ header .image {
 /* BEST Section */
 
 .best .container {
-    padding-top: 52px;
+    padding-top: 79px;
 }
 
 .best .best__header {
@@ -345,8 +402,7 @@ header .image {
 .best .best__desc {
     font-family: 'Readex Pro', sans-serif;
     text-align: center;
-    font-size: 13px;
-    margin-bottom: 31px;
+    margin-bottom: 58px;
 }
 
 .best .items {
@@ -362,6 +418,7 @@ header .image {
     flex-direction: column;
     align-items: center;
     padding: 41px 29px 0;
+    text-align: center;
 }
 
 .best .item button {
@@ -378,7 +435,7 @@ header .image {
 /* IDEAS Section */
 
 .ideas .container {
-    padding-top: 80px;
+    padding-top: 79px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,12 +447,11 @@ header .image {
 
 .ideas .ideas__desc {
     text-align: center;
-    margin-top: 9px;
 }
 
 .ideas .info {
     display: flex;
-    margin: 56px auto 75px;
+    margin: 58px auto 72px;
 }
 
 .ideas .info img {
@@ -412,7 +468,7 @@ header .image {
 
 .ideas .info .text p {
     font-size: 24px;
-    margin-bottom: 23px;
+    margin-bottom: 29px;
 }
 
 .ideas .ideas__all {
@@ -435,7 +491,7 @@ header .image {
 /* SEARCH Section */
 
 .search .container {
-    padding: 80px 0 68px;
+    padding-top: 80px;
 }
 
 .search .search__header {
@@ -448,7 +504,7 @@ header .image {
     border-radius: 100px;
     padding: 15px 17px 16px;
     max-width: 650px;
-    margin: 16px auto 18px;
+    margin: 23px auto 16px;
 }
 
 .search .search__bar form {
@@ -473,6 +529,7 @@ header .image {
     font-size: 14px;
     line-height: 17px;
     font-family: inherit;
+    background-color: transparent;
     outline: none;
     border: none;
 }
@@ -499,12 +556,16 @@ header .image {
 
 /* MAIL Section */
 
+.mail .container {
+    padding-top: 67px;
+}
+
 .mail .banner {
     max-width: 935px;
     margin: 0 auto;
     background-color: #DCE5E2;
     border-radius: 16px;
-    padding: 47px 40px 43.5px;
+    padding: 47px 40px 43px;
 }
 
 .mail .banner .mail__header {
@@ -569,7 +630,7 @@ footer {
 footer nav {
     display: flex;
     justify-content: space-between;
-    padding: 49px 0 79px;
+    padding: 49px 0 82px;
 }
 
 footer hr {
@@ -579,10 +640,16 @@ footer hr {
 
 footer nav .about {
     width: 304px;
+    top: 11px;
+}
+
+footer nav .about__logo {
+    width: 181px;
+    height: 22px;
 }
 
 footer nav .about__desc {
-    margin-top: 18px;
+    margin-top: 14px;
     font-size: 16px;
 }
 
