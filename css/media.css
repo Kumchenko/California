@@ -246,6 +246,14 @@
         margin-top: 16px;
     }
 
+    .popular .popular__desc {
+        margin-bottom: 20px;
+    }
+
+    .best .best__desc {
+        margin-bottom: 20px;
+    }
+
     .best .item button {
         margin-bottom: 10px;
     }
@@ -257,17 +265,9 @@
     
     /* ====== BASE ====== */
 
-    .popular .popular__desc {
-        margin-bottom: 20px;
-    }
-
     .popular .item {
         width: 85%;
         max-width: initial;
-    }
-
-    .best .best__desc {
-        margin-bottom: 20px;
     }
 
     .best .items {
