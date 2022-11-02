@@ -44,6 +44,10 @@
         font-size: 1.143rem;
     }
 
+    .categories .tab__desc {
+        font-size: 1.07rem;
+    }
+
     .ideas .info .text p {
         font-size: 1.715rem;
     }
