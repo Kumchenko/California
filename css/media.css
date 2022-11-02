@@ -131,6 +131,28 @@
         margin-right: 13px;
     }
 
+    header .banner{
+        padding: 0 30px;
+    }
+
+    header .banner .info {
+        padding: 25px 0;
+    }
+
+    header .banner .banner__btn{
+        width: 10px;
+        height: 24px;
+        top: calc(50% - 12px);
+    }
+    
+    header .banner .banner__prev{
+        left: 9px;
+    }
+    
+    header .banner .banner__next{
+        right: 9px;
+    }
+
     .categories .tabs .tab {
         margin: 0px;
     }
@@ -228,6 +250,14 @@
         display: none;
     }
 
+    header .banner .info {
+        max-width: initial;
+    }
+
+    header .banner .image {
+        display: none;
+    }
+
     .categories .tabs {
         flex-direction: column;
     }
@@ -264,6 +294,45 @@
 @media screen and (max-width: 576px) {
     
     /* ====== BASE ====== */
+    .categories .categories__desc {
+        margin-bottom: 25px;
+    }
+
+    .categories .tabs .vert {
+        flex-direction: column;
+    }
+
+    .categories .tabs .vert .tab {
+        width: 100%;
+    }
+
+    .categories .tabs .vert .tab:not(:first-child) {
+        margin-top: 16px;
+        margin-left: 0px;
+    }
+
+    .categories .tabs .vert .tab:nth-child(odd) .tab__head {
+        margin-bottom: 15px;
+    }
+
+    .categories .tab__img_laptops {
+        height: 230px;
+    }
+
+    .categories .tab__img_watches {
+        height: 120px;
+    }
+
+    .categories .tab__img_phones {
+        height: 250px;
+        margin-bottom: 24px;
+        left: initial;
+    }
+
+    .categories .tab__img_tablets {
+        height: 280px;
+        margin-top: 24px;
+    }
 
     .popular .item {
         width: 85%;
@@ -297,8 +366,16 @@
         font-size: 1.4rem;
     }
 
+    .mail .banner {
+        padding: 28px 20px;
+    }
+
     .mail .banner .bar {
         width: auto;
+    }
+
+    .mail .banner .bar input {
+        padding: 0 13px;
     }
 
     footer nav {
