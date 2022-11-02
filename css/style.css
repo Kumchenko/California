@@ -1,7 +1,6 @@
-/* ----------------------------- */
-/* ------- SPECIFICATION ------- */
-/* ----------------------------- */
-/* BASE */
+/* =========================== */
+/* ========== BASE =========== */
+/* =========================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 * {
@@ -90,7 +89,6 @@ button {
   background-color: transparent;
   color: #000;
 }
-
 .expl-btn:hover {
   background-color: #000;
   color: #fff;
@@ -341,22 +339,22 @@ section.popular .items .item span {
 }
 
 /* BEST Section */
-.best {
+section.best {
   padding-top: 79px;
 }
-.best .best__header {
+section.best .best__header {
   text-align: center;
 }
-.best .best__desc {
+section.best .best__desc {
   font-family: "Readex Pro", sans-serif;
   text-align: center;
   margin-bottom: 58px;
 }
-.best .items {
+section.best .items {
   display: flex;
   justify-content: space-between;
 }
-.best .items .item {
+section.best .items .item {
   max-width: 33%;
   background-color: #F8F9FA;
   border-radius: 16px;
@@ -366,11 +364,11 @@ section.popular .items .item span {
   padding: 41px 29px 0;
   text-align: center;
 }
-.best .items .item button {
+section.best .items .item button {
   margin: 30px auto;
   padding: 14px 63px;
 }
-.best .items .item img {
+section.best .items .item img {
   width: 355px;
   height: 250px;
   -o-object-fit: contain;
@@ -378,25 +376,25 @@ section.popular .items .item span {
 }
 
 /* IDEAS Section */
-.ideas {
+section.ideas {
   padding-top: 79px;
 }
-.ideas .container {
+section.ideas .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ideas .ideas__header {
+section.ideas .ideas__header {
   text-align: center;
 }
-.ideas .ideas__desc {
+section.ideas .ideas__desc {
   text-align: center;
 }
-.ideas .info {
+section.ideas .info {
   display: flex;
   margin: 58px auto 72px;
 }
-.ideas .info img {
+section.ideas .info img {
   border-radius: 16px;
   width: 48%;
   max-width: 620px;
@@ -404,21 +402,21 @@ section.popular .items .item span {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.ideas .info .text {
+section.ideas .info .text {
   padding: 14px 35px;
 }
-.ideas .info .text p {
+section.ideas .info .text p {
   font-size: 24px;
   margin-bottom: 29px;
 }
-.ideas .ideas__all {
+section.ideas .ideas__all {
   text-align: center;
   font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ideas .ideas__all:after {
+section.ideas .ideas__all:after {
   content: " ";
   display: block;
   width: 28px;
@@ -487,38 +485,17 @@ section.search button:hover {
 }
 
 /* MAIL Section */
-.mail {
+section.mail {
   padding-top: 67px;
 }
-
-.mail .banner {
+section.mail .banner {
   max-width: 935px;
   margin: 0 auto;
   background-color: #DCE5E2;
   border-radius: 16px;
   padding: 47px 40px 43px;
 }
-
-.mail .banner .mail__header {
-  text-align: center;
-}
-
-.mail .banner .mail__desc {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 9px;
-}
-
-.mail .banner .mail__img {
-  width: 233px;
-  height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 14.5px auto 13.5px;
-  display: block;
-}
-
-.mail .banner .bar {
+section.mail .banner .bar {
   width: 400px;
   height: 50px;
   margin: 0 auto;
@@ -528,8 +505,7 @@ section.search button:hover {
   flex-direction: row;
   overflow: hidden;
 }
-
-.mail .banner .bar input {
+section.mail .banner .bar input {
   width: 100%;
   padding: 16px 33px 17px 32px;
   background-color: transparent;
@@ -538,8 +514,7 @@ section.search button:hover {
   border: none;
   font-size: 1rem;
 }
-
-.mail .banner .bar button {
+section.mail .banner .bar button {
   background-color: #000;
   color: #fff;
   white-space: nowrap;
@@ -549,9 +524,24 @@ section.search button:hover {
   border: none;
   font-size: 1rem;
 }
-
-.mail .banner .bar button:hover {
+section.mail .banner .bar button:hover {
   opacity: 0.7;
+}
+section.mail .mail__header {
+  text-align: center;
+}
+section.mail .mail__desc {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 9px;
+}
+section.mail .mail__img {
+  width: 233px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 14.5px auto 13.5px;
+  display: block;
 }
 
 /* FOOTER Section */
@@ -559,66 +549,53 @@ footer {
   margin-top: 24px;
   border-top: 1px solid #DCE5E2;
 }
-
 footer nav {
   display: flex;
   justify-content: space-between;
   padding: 49px 0 82px;
 }
-
-footer hr {
-  border: none;
-  border-top: 1px solid #DCE5E2;
-}
-
 footer nav .about {
   width: 304px;
   top: 11px;
 }
-
-footer nav .about__logo {
+footer nav .about .about__logo {
   width: 181px;
   height: 22px;
 }
-
-footer nav .about__desc {
+footer nav .about .about__desc {
   margin-top: 14px;
   font-size: 16px;
 }
-
 footer nav .list h5 {
   margin-bottom: 20px;
 }
-
 footer nav .list li {
   font-size: 17px;
 }
-
 footer nav .list li:not(:first-child) {
   margin-top: 15px;
 }
-
+footer hr {
+  border: none;
+  border-top: 1px solid #DCE5E2;
+}
 footer .credentials {
   padding-top: 53px;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
 }
-
 footer .credentials div {
   display: flex;
 }
-
 footer .credentials div span {
   font-family: "Readex Pro", sans-serif;
   white-space: nowrap;
 }
-
 footer .credentials div a {
   margin-left: 7px;
   display: flex;
 }
-
 footer .credentials div a:after {
   content: " ";
   width: 21px;

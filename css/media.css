@@ -2,410 +2,311 @@
 /* ========== MEDIA ========== */
 /* ========= QUERIES ========= */
 /* =========================== */
-
 /* ====== 1400-1200px ====== */
 @media screen and (max-width: 1400px) {
-
-    /* ====== BASE ====== */
-    html {
-        font-size: calc(11px + 3 * ((100vw - 320px) / (1440 - 320)));
-    }
-
-    .container {
-        width: auto;
-        margin: 0 5.07vw;
-    }
-
-    h1 {
-        font-size: calc(38px + 20 * ((100vw - 320px) / (1440 - 320)));
-    }
-    
-    h2 {
-        font-size: calc(30px + 12 * ((100vw - 320px) / (1440 - 320)));
-    }
-    
-    h3 {
-        font-size: calc(23px + 9 * ((100vw - 320px) / (1440 - 320)));
-    }
-    
-    h4 {
-        font-size: calc(21px + 7 * ((100vw - 320px) / (1440 - 320)));
-    }
-    
-    h5 {
-        font-size: calc(16px + 6 * ((100vw - 320px) / (1440 - 320)));
-    }
-    
-    h6 {
-        font-size: calc(11px + 2 * ((100vw - 320px) / (1440 - 320)));
-    }
-
-    header .banner .info p {
-        font-size: 1.143rem;
-    }
-
-    .categories .tab__desc {
-        font-size: 1.07rem;
-    }
-
-    .ideas .info .text p {
-        font-size: 1.715rem;
-    }
-    
-    .ideas .ideas__all {
-        font-size: 1.715rem;
-    }
-
-    .mail .banner .mail__desc {
-        text-align: center;
-        font-size: 1.143rem;
-        margin-top: 9px;
-    }
-
-    footer nav .about__desc {
-        font-size: 1.143rem;
-    }
-
-    footer nav .list li {
-        font-size: 1.214rem;
-    }
-    
-    footer .credentials {
-        font-size: 1.285rem;
-    }
-
+  /* ====== BASE ====== */
+  html {
+    font-size: calc(11px + 3 * (100vw - 320px) / 1120);
+  }
+  .container {
+    width: auto;
+    margin: 0 5.07vw;
+  }
+  h1 {
+    font-size: calc(38px + 20 * (100vw - 320px) / 1120);
+  }
+  h2 {
+    font-size: calc(30px + 12 * (100vw - 320px) / 1120);
+  }
+  h3 {
+    font-size: calc(23px + 9 * (100vw - 320px) / 1120);
+  }
+  h4 {
+    font-size: calc(21px + 7 * (100vw - 320px) / 1120);
+  }
+  h5 {
+    font-size: calc(16px + 6 * (100vw - 320px) / 1120);
+  }
+  h6 {
+    font-size: calc(11px + 2 * (100vw - 320px) / 1120);
+  }
+  header .banner .info p {
+    font-size: 1.143rem;
+  }
+  .categories .tab__desc {
+    font-size: 1.07rem;
+  }
+  .ideas .info .text p {
+    font-size: 1.715rem;
+  }
+  .ideas .ideas__all {
+    font-size: 1.715rem;
+  }
+  .mail .banner .mail__desc {
+    text-align: center;
+    font-size: 1.143rem;
+    margin-top: 9px;
+  }
+  footer nav .about__desc {
+    font-size: 1.143rem;
+  }
+  footer nav .list li {
+    font-size: 1.214rem;
+  }
+  footer .credentials {
+    font-size: 1.285rem;
+  }
 }
-
-
 /* ====== 1200-992px ====== */
 @media screen and (max-width: 1200px) {
-
-    /* ====== BASE ====== */
-
-    header .banner h1 {
-        width: auto;
-    }
-
-    header .info {
-        max-width: 50%;
-    }
-
-    header .image {
-        max-width: 50%;
-    }
-
-    .best .item {
-        max-width: 32%;
-    }
-
-    .best .item button {
-        padding: 14px 50px;
-    }
-
-    .best .item img {
-        width: auto;
-        height: 215px;
-        max-width: 100%;
-    }
-
+  /* ====== BASE ====== */
+  header .banner h1 {
+    width: auto;
+  }
+  header .info {
+    max-width: 50%;
+  }
+  header .image {
+    max-width: 50%;
+  }
+  .best .item {
+    max-width: 32%;
+  }
+  .best .item button {
+    padding: 14px 50px;
+  }
+  .best .item img {
+    width: auto;
+    height: 215px;
+    max-width: 100%;
+  }
 }
-
-
 /* ====== 768-992px ====== */
 @media screen and (max-width: 992px) {
-
-    /* ====== BASE ====== */
-    h2 {
-        margin-bottom: 6px;
-    }
-
-    .expl-btn {
-        padding: 12px 48px;
-    }
-    
-    header .links > *:not(:last-child) {
-        margin-right: 13px;
-    }
-
-    header .buttons {
-        margin: 0;
-    }
-
-    header .buttons > *:not(:last-child) {
-        margin-right: 13px;
-    }
-
-    header .banner{
-        padding: 0 30px;
-    }
-
-    header .banner .info {
-        padding: 25px 0;
-    }
-
-    header .banner .banner__btn{
-        width: 10px;
-        height: 24px;
-        top: calc(50% - 12px);
-    }
-    
-    header .banner .banner__prev{
-        left: 9px;
-    }
-    
-    header .banner .banner__next{
-        right: 9px;
-    }
-
-    .categories .tabs .tab {
-        margin: 0px;
-    }
-
-    .categories .tabs .hor .tab {
-        padding: 0 25px;
-    }
-
-    .categories .tabs .hor .tab_big {
-        padding-bottom: 25px;
-    }
-
-    .categories .tabs .vert .tab__head, .categories .tabs .vert .tab__desc {
-        padding: 0 25px;
-    }
-
-    .categories .tabs .vert .tab:nth-child(even) .tab__desc {
-        margin-top: 15px;
-    }
-
-    .popular .items {
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .popular .item {
-        width: 40%;
-        max-width: 300px;
-    }
-
-    .popular .item img{
-        height: 215px;
-    }
-
-    .best .item h4 {
-        margin-bottom: 15px;
-    }
-
-    .best .item button {
-        padding: 10px 25px;
-        margin-top: auto;
-    }
-
-    .best .item img {
-        height: 145px;
-    }
-
-    .search .search__bar {
-        padding: 12px 14px 13px;
-    }
-
-    .search .search__bar button {
-        width: 26px;
-        height: 25px;
-    }
-
-    .search .search__bar input {
-        margin-left: 15px;
-    }
-
-    .mail .banner .bar {
-        width: 370px;
-        height: 42px;
-    }
-
-    .mail .banner .bar button {
-        padding: 0 20px;
-    }
-
-    footer nav {
-        flex-wrap: wrap;
-        padding: 30px 0 60px;
-    }
-
-    footer nav .about {
-        width: 100%;
-        top: 0;
-    }
-
-    footer nav .about__desc {
-        margin: 0.5em 0 1.5em;
-    }
-
-    footer .credentials {
-        padding: 26px 0 5px;
-    }
+  /* ====== BASE ====== */
+  h2 {
+    margin-bottom: 6px;
+  }
+  .expl-btn {
+    padding: 12px 48px;
+  }
+  header .links > *:not(:last-child) {
+    margin-right: 13px;
+  }
+  header .buttons {
+    margin: 0;
+  }
+  header .buttons > *:not(:last-child) {
+    margin-right: 13px;
+  }
+  header .banner {
+    padding: 0 30px;
+  }
+  header .banner .info {
+    padding: 25px 0;
+  }
+  header .banner .banner__btn {
+    width: 10px;
+    height: 24px;
+    top: calc(50% - 12px);
+  }
+  header .banner .banner__prev {
+    left: 9px;
+  }
+  header .banner .banner__next {
+    right: 9px;
+  }
+  .categories .tabs .tab {
+    margin: 0px;
+  }
+  .categories .tabs .hor .tab {
+    padding: 0 25px;
+  }
+  .categories .tabs .hor .tab_big {
+    padding-bottom: 25px;
+  }
+  .categories .tabs .vert .tab__head, .categories .tabs .vert .tab__desc {
+    padding: 0 25px;
+  }
+  .categories .tabs .vert .tab:nth-child(even) .tab__desc {
+    margin-top: 15px;
+  }
+  .popular .items {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .popular .item {
+    width: 40%;
+    max-width: 300px;
+  }
+  .popular .item img {
+    height: 215px;
+  }
+  .best .item h4 {
+    margin-bottom: 15px;
+  }
+  .best .item button {
+    padding: 10px 25px;
+    margin-top: auto;
+  }
+  .best .item img {
+    height: 145px;
+  }
+  .search .search__bar {
+    padding: 12px 14px 13px;
+  }
+  .search .search__bar button {
+    width: 26px;
+    height: 25px;
+  }
+  .search .search__bar input {
+    margin-left: 15px;
+  }
+  .mail .banner .bar {
+    width: 370px;
+    height: 42px;
+  }
+  .mail .banner .bar button {
+    padding: 0 20px;
+  }
+  footer nav {
+    flex-wrap: wrap;
+    padding: 30px 0 60px;
+  }
+  footer nav .about {
+    width: 100%;
+    top: 0;
+  }
+  footer nav .about__desc {
+    margin: 0.5em 0 1.5em;
+  }
+  footer .credentials {
+    padding: 26px 0 5px;
+  }
 }
-
-
 /* ====== 576-768px ====== */
 @media screen and (max-width: 768px) {
-    
-    /* ====== BASE ====== */
-    header .links {
-        display: none;
-    }
-
-    header .banner .info {
-        max-width: initial;
-    }
-
-    header .banner .image {
-        display: none;
-    }
-
-    .categories .tabs {
-        flex-direction: column;
-    }
-
-    .categories .tabs .hor,  .categories .tabs .vert{
-        width: auto;
-        margin: 0;
-    }
-
-    .categories .tabs .vert{
-        width: auto;
-        margin-top: 16px;
-    }
-
-    .categories .tabs .hor .tab:not(:first-child) {
-        margin-top: 16px;
-    }
-
-    .popular .popular__desc {
-        margin-bottom: 20px;
-    }
-
-    .best .best__desc {
-        margin-bottom: 20px;
-    }
-
-    .best .item button {
-        margin-bottom: 10px;
-    }
+  /* ====== BASE ====== */
+  header .links {
+    display: none;
+  }
+  header .banner .info {
+    max-width: initial;
+  }
+  header .banner .image {
+    display: none;
+  }
+  .categories .tabs {
+    flex-direction: column;
+  }
+  .categories .tabs .hor, .categories .tabs .vert {
+    width: auto;
+    margin: 0;
+  }
+  .categories .tabs .vert {
+    width: auto;
+    margin-top: 16px;
+  }
+  .categories .tabs .hor .tab:not(:first-child) {
+    margin-top: 16px;
+  }
+  .popular .popular__desc {
+    margin-bottom: 20px;
+  }
+  .best .best__desc {
+    margin-bottom: 20px;
+  }
+  .best .item button {
+    margin-bottom: 10px;
+  }
 }
-
-
 /* ====== 320-576px ====== */
 @media screen and (max-width: 576px) {
-    
-    /* ====== BASE ====== */
-    .categories .categories__desc {
-        margin-bottom: 25px;
-    }
-
-    .categories .tabs .vert {
-        flex-direction: column;
-    }
-
-    .categories .tabs .vert .tab {
-        width: 100%;
-    }
-
-    .categories .tabs .vert .tab:not(:first-child) {
-        margin-top: 16px;
-        margin-left: 0px;
-    }
-
-    .categories .tabs .vert .tab:nth-child(odd) .tab__head {
-        margin-bottom: 15px;
-    }
-
-    .categories .tab__img_laptops {
-        height: 230px;
-    }
-
-    .categories .tab__img_watches {
-        height: 120px;
-    }
-
-    .categories .tab__img_phones {
-        height: 250px;
-        margin-bottom: 24px;
-        left: initial;
-    }
-
-    .categories .tab__img_tablets {
-        height: 280px;
-        margin-top: 24px;
-    }
-
-    .popular .item {
-        width: 85%;
-        max-width: initial;
-    }
-
-    .best .items {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .best .item {
-        width: 85%;
-        max-width: initial;
-    }
-
-    .best .item:not(:first-child) {
-        margin-top: 15px;
-    }
-
-    .ideas .info {
-        flex-direction: column;
-        margin: 16px auto;
-    }
-
-    .ideas .info img {
-        width: 100%;
-    }
-
-    .ideas .info .text p {
-        font-size: 1.4rem;
-    }
-
-    .mail .banner {
-        padding: 28px 20px;
-    }
-
-    .mail .banner .bar {
-        width: auto;
-    }
-
-    .mail .banner .bar input {
-        padding: 0 13px;
-    }
-
-    footer nav {
-        gap: 20px;
-    }
-
-    footer nav .list {
-        width: 45%;
-    }
-
-    footer nav .list h5 {
-        margin-bottom: 12px;
-    }
-
-    footer nav .list li:not(:first-child) {
-        margin-top: 8px;
-    }
-
-    footer .credentials > *{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .credentials div a:after {
-        width: 13px;
-        height: 13px;
-    }
-}
+  /* ====== BASE ====== */
+  .categories .categories__desc {
+    margin-bottom: 25px;
+  }
+  .categories .tabs .vert {
+    flex-direction: column;
+  }
+  .categories .tabs .vert .tab {
+    width: 100%;
+  }
+  .categories .tabs .vert .tab:not(:first-child) {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .categories .tabs .vert .tab:nth-child(odd) .tab__head {
+    margin-bottom: 15px;
+  }
+  .categories .tab__img_laptops {
+    height: 230px;
+  }
+  .categories .tab__img_watches {
+    height: 120px;
+  }
+  .categories .tab__img_phones {
+    height: 250px;
+    margin-bottom: 24px;
+    left: initial;
+  }
+  .categories .tab__img_tablets {
+    height: 280px;
+    margin-top: 24px;
+  }
+  .popular .item {
+    width: 85%;
+    max-width: initial;
+  }
+  .best .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .best .item {
+    width: 85%;
+    max-width: initial;
+  }
+  .best .item:not(:first-child) {
+    margin-top: 15px;
+  }
+  .ideas .info {
+    flex-direction: column;
+    margin: 16px auto;
+  }
+  .ideas .info img {
+    width: 100%;
+  }
+  .ideas .info .text p {
+    font-size: 1.4rem;
+  }
+  .mail .banner {
+    padding: 28px 20px;
+  }
+  .mail .banner .bar {
+    width: auto;
+  }
+  .mail .banner .bar input {
+    padding: 0 13px;
+  }
+  footer nav {
+    gap: 20px;
+  }
+  footer nav .list {
+    width: 45%;
+  }
+  footer nav .list h5 {
+    margin-bottom: 12px;
+  }
+  footer nav .list li:not(:first-child) {
+    margin-top: 8px;
+  }
+  footer .credentials > * {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .credentials div a:after {
+    width: 13px;
+    height: 13px;
+  }
+}/*# sourceMappingURL=media.css.map */
