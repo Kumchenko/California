@@ -33,21 +33,21 @@
   header .banner .info p {
     font-size: 1.143rem;
   }
-  .categories .tab__desc {
+  section.categories .tabs .tab .tab__desc {
     font-size: 1.07rem;
   }
-  .ideas .info .text p {
+  section.ideas .info .text p {
     font-size: 1.715rem;
   }
-  .ideas .ideas__all {
+  section.ideas .ideas__all {
     font-size: 1.715rem;
   }
-  .mail .banner .mail__desc {
+  section.mail .mail__desc {
     text-align: center;
     font-size: 1.143rem;
     margin-top: 9px;
   }
-  footer nav .about__desc {
+  footer nav .about .about__desc {
     font-size: 1.143rem;
   }
   footer nav .list li {
@@ -60,22 +60,22 @@
 /* ====== 1200-992px ====== */
 @media screen and (max-width: 1200px) {
   /* ====== BASE ====== */
-  header .banner h1 {
+  header .banner .info {
+    max-width: 50%;
+  }
+  header .banner .info h1 {
     width: auto;
   }
-  header .info {
+  header .banner .image {
     max-width: 50%;
   }
-  header .image {
-    max-width: 50%;
-  }
-  .best .item {
+  section.best .items .item {
     max-width: 32%;
   }
-  .best .item button {
+  section.best .items .item button {
     padding: 14px 50px;
   }
-  .best .item img {
+  section.best .items .item img {
     width: auto;
     height: 215px;
     max-width: 100%;
@@ -90,13 +90,13 @@
   .expl-btn {
     padding: 12px 48px;
   }
-  header .links > *:not(:last-child) {
+  header nav .links li:not(:last-child) {
     margin-right: 13px;
   }
-  header .buttons {
+  header nav .buttons {
     margin: 0;
   }
-  header .buttons > *:not(:last-child) {
+  header nav .buttons button:not(:last-child) {
     margin-right: 13px;
   }
   header .banner {
@@ -110,63 +110,63 @@
     height: 24px;
     top: calc(50% - 12px);
   }
-  header .banner .banner__prev {
+  header .banner .banner__btn.banner__prev {
     left: 9px;
   }
-  header .banner .banner__next {
+  header .banner .banner__btn.banner__next {
     right: 9px;
   }
-  .categories .tabs .tab {
+  section.categories .tabs .tab {
     margin: 0px;
   }
-  .categories .tabs .hor .tab {
+  section.categories .tabs .hor .tab {
     padding: 0 25px;
   }
-  .categories .tabs .hor .tab_big {
+  section.categories .tabs .hor .tab_big {
     padding-bottom: 25px;
   }
-  .categories .tabs .vert .tab__head, .categories .tabs .vert .tab__desc {
+  section.categories .tabs .vert .tab .tab__head, section.categories .tabs .vert .tab .tab__desc {
     padding: 0 25px;
   }
-  .categories .tabs .vert .tab:nth-child(even) .tab__desc {
+  section.categories .tabs .vert .tab:nth-child(even) .tab__desc {
     margin-top: 15px;
   }
-  .popular .items {
+  section.popular .items {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .popular .item {
+  section.popular .items .item {
     width: 40%;
     max-width: 300px;
   }
-  .popular .item img {
+  section.popular .items .item img {
     height: 215px;
   }
-  .best .item h4 {
+  section.best .items .item h4 {
     margin-bottom: 15px;
   }
-  .best .item button {
+  section.best .items .item button {
     padding: 10px 25px;
     margin-top: auto;
   }
-  .best .item img {
+  section.best .items .item img {
     height: 145px;
   }
-  .search .search__bar {
+  section.search .search__bar {
     padding: 12px 14px 13px;
   }
-  .search .search__bar button {
+  section.search .search__bar button {
     width: 26px;
     height: 25px;
   }
-  .search .search__bar input {
+  section.search .search__bar input {
     margin-left: 15px;
   }
-  .mail .banner .bar {
+  section.mail .banner .bar {
     width: 370px;
     height: 42px;
   }
-  .mail .banner .bar button {
+  section.mail .banner .bar button {
     padding: 0 20px;
   }
   footer nav {
@@ -177,7 +177,7 @@
     width: 100%;
     top: 0;
   }
-  footer nav .about__desc {
+  footer nav .about .about__desc {
     margin: 0.5em 0 1.5em;
   }
   footer .credentials {
@@ -187,7 +187,7 @@
 /* ====== 576-768px ====== */
 @media screen and (max-width: 768px) {
   /* ====== BASE ====== */
-  header .links {
+  header nav .links {
     display: none;
   }
   header .banner .info {
@@ -196,96 +196,96 @@
   header .banner .image {
     display: none;
   }
-  .categories .tabs {
+  section.categories .tabs {
     flex-direction: column;
   }
-  .categories .tabs .hor, .categories .tabs .vert {
+  section.categories .tabs .hor, section.categories .tabs .vert {
     width: auto;
     margin: 0;
   }
-  .categories .tabs .vert {
+  section.categories .tabs .vert {
     width: auto;
     margin-top: 16px;
   }
-  .categories .tabs .hor .tab:not(:first-child) {
+  section.categories .tabs .hor .tab:not(:first-child) {
     margin-top: 16px;
   }
-  .popular .popular__desc {
+  section.popular .popular__desc {
     margin-bottom: 20px;
   }
-  .best .best__desc {
+  section.best .best__desc {
     margin-bottom: 20px;
   }
-  .best .item button {
+  section.best .items .item button {
     margin-bottom: 10px;
   }
 }
 /* ====== 320-576px ====== */
 @media screen and (max-width: 576px) {
   /* ====== BASE ====== */
-  .categories .categories__desc {
+  section.categories .categories__desc {
     margin-bottom: 25px;
   }
-  .categories .tabs .vert {
+  section.categories .tabs .vert {
     flex-direction: column;
   }
-  .categories .tabs .vert .tab {
+  section.categories .tabs .vert .tab {
     width: 100%;
   }
-  .categories .tabs .vert .tab:not(:first-child) {
+  section.categories .tabs .vert .tab:not(:first-child) {
     margin-top: 16px;
     margin-left: 0px;
   }
-  .categories .tabs .vert .tab:nth-child(odd) .tab__head {
+  section.categories .tabs .vert .tab:nth-child(odd) .tab__head {
     margin-bottom: 15px;
   }
-  .categories .tab__img_laptops {
+  section.categories .tabs .tab .tab__img_laptops {
     height: 230px;
   }
-  .categories .tab__img_watches {
+  section.categories .tabs .tab .tab__img_watches {
     height: 120px;
   }
-  .categories .tab__img_phones {
+  section.categories .tabs .tab .tab__img_phones {
     height: 250px;
     margin-bottom: 24px;
     left: initial;
   }
-  .categories .tab__img_tablets {
+  section.categories .tabs .tab .tab__img_tablets {
     height: 280px;
     margin-top: 24px;
   }
-  .popular .item {
+  section.popular .items .item {
     width: 85%;
     max-width: initial;
   }
-  .best .items {
+  section.best .items {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .best .item {
+  section.best .items .item {
     width: 85%;
     max-width: initial;
   }
-  .best .item:not(:first-child) {
+  section.best .items .item:not(:first-child) {
     margin-top: 15px;
   }
-  .ideas .info {
+  section.ideas .info {
     flex-direction: column;
     margin: 16px auto;
   }
-  .ideas .info img {
+  section.ideas .info img {
     width: 100%;
   }
-  .ideas .info .text p {
+  section.ideas .info .text p {
     font-size: 1.4rem;
   }
-  .mail .banner {
+  section.mail .banner {
     padding: 28px 20px;
   }
-  .mail .banner .bar {
+  section.mail .banner .bar {
     width: auto;
   }
-  .mail .banner .bar input {
+  section.mail .banner .bar input {
     padding: 0 13px;
   }
   footer nav {
@@ -300,12 +300,12 @@
   footer nav .list li:not(:first-child) {
     margin-top: 8px;
   }
-  footer .credentials > * {
+  footer .credentials div {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  footer .credentials div a:after {
+  footer .credentials a:after {
     width: 13px;
     height: 13px;
   }
