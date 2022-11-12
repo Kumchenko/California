@@ -47,11 +47,11 @@
     font-size: 1.143rem;
     margin-top: 9px;
   }
-  footer nav .about .about__desc {
-    font-size: 1.143rem;
-  }
   footer nav .list li {
     font-size: 1.214rem;
+  }
+  footer .about__desc {
+    font-size: 1.143rem;
   }
   footer .credentials {
     font-size: 1.285rem;
@@ -69,13 +69,13 @@
   header .banner .image {
     max-width: 50%;
   }
-  section.best .items .item {
+  section.best .item {
     max-width: 32%;
   }
-  section.best .items .item button {
+  section.best .item button {
     padding: 14px 50px;
   }
-  section.best .items .item img {
+  section.best .item img {
     width: auto;
     height: 215px;
     max-width: 100%;
@@ -90,13 +90,13 @@
   .expl-btn {
     padding: 12px 48px;
   }
-  header nav .links li:not(:last-child) {
+  header .links li:not(:last-child) {
     margin-right: 13px;
   }
-  header nav .buttons {
+  header .buttons {
     margin: 0;
   }
-  header nav .buttons button:not(:last-child) {
+  header .buttons button:not(:last-child) {
     margin-right: 13px;
   }
   header .banner {
@@ -105,51 +105,51 @@
   header .banner .info {
     padding: 25px 0;
   }
-  header .banner .banner__btn {
+  header .banner__btn {
     width: 10px;
     height: 24px;
     top: calc(50% - 12px);
   }
-  header .banner .banner__btn.banner__prev {
+  header .banner__btn.banner__prev {
     left: 9px;
   }
-  header .banner .banner__btn.banner__next {
+  header .banner__btn.banner__next {
     right: 9px;
   }
-  section.categories .tabs .tab {
+  section.categories .tab {
     margin: 0px;
   }
-  section.categories .tabs .hor .tab {
-    padding: 0 25px;
-  }
-  section.categories .tabs .hor .tab_big {
+  section.categories .tab_big {
     padding-bottom: 25px;
   }
-  section.categories .tabs .vert .tab .tab__head, section.categories .tabs .vert .tab .tab__desc {
+  section.categories .hor .tab {
     padding: 0 25px;
   }
-  section.categories .tabs .vert .tab:nth-child(even) .tab__desc {
+  section.categories .vert .tab .tab__head, section.categories .vert .tab .tab__desc {
+    padding: 0 25px;
+  }
+  section.categories .vert .tab:nth-child(even) .tab__desc {
     margin-top: 15px;
   }
   section.popular .items {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  section.popular .items .item {
+  section.popular .item {
     width: 40%;
     max-width: 300px;
   }
-  section.popular .items .item img {
+  section.popular .item img {
     height: 215px;
   }
-  section.best .items .item h4 {
+  section.best .item h4 {
     margin-bottom: 15px;
   }
-  section.best .items .item button {
+  section.best .item button {
     padding: 10px 25px;
     margin-top: auto;
   }
-  section.best .items .item img {
+  section.best .item img {
     height: 145px;
   }
   section.search .search__bar {
@@ -162,22 +162,22 @@
   section.search .search__bar input {
     margin-left: 15px;
   }
-  section.mail .banner .bar {
+  section.mail .bar {
     width: 370px;
     height: 42px;
   }
-  section.mail .banner .bar button {
+  section.mail .bar button {
     padding: 0 20px;
   }
   footer nav {
     flex-wrap: wrap;
     padding: 30px 0 60px;
   }
-  footer nav .about {
+  footer .about {
     width: 100%;
     top: 0;
   }
-  footer nav .about .about__desc {
+  footer .about__desc {
     margin: 0.5em 0 1.5em;
   }
   footer .credentials {
@@ -187,7 +187,7 @@
 /* ====== 576-768px ====== */
 @media screen and (max-width: 768px) {
   /* ====== BASE ====== */
-  header nav .links {
+  header .links {
     display: none;
   }
   header .banner .info {
@@ -199,15 +199,14 @@
   section.categories .tabs {
     flex-direction: column;
   }
-  section.categories .tabs .hor, section.categories .tabs .vert {
+  section.categories .hor, section.categories .vert {
     width: auto;
     margin: 0;
   }
-  section.categories .tabs .vert {
-    width: auto;
+  section.categories .vert {
     margin-top: 16px;
   }
-  section.categories .tabs .hor .tab:not(:first-child) {
+  section.categories .hor .tab:not(:first-child) {
     margin-top: 16px;
   }
   section.popular .popular__desc {
@@ -216,7 +215,7 @@
   section.best .best__desc {
     margin-bottom: 20px;
   }
-  section.best .items .item button {
+  section.best .item button {
     margin-bottom: 10px;
   }
 }
@@ -226,35 +225,35 @@
   section.categories .categories__desc {
     margin-bottom: 25px;
   }
-  section.categories .tabs .vert {
+  section.categories .vert {
     flex-direction: column;
   }
-  section.categories .tabs .vert .tab {
+  section.categories .vert .tab {
     width: 100%;
   }
-  section.categories .tabs .vert .tab:not(:first-child) {
+  section.categories .vert .tab:not(:first-child) {
     margin-top: 16px;
     margin-left: 0px;
   }
-  section.categories .tabs .vert .tab:nth-child(odd) .tab__head {
+  section.categories .vert .tab:nth-child(odd) .tab__head {
     margin-bottom: 15px;
   }
-  section.categories .tabs .tab .tab__img_laptops {
+  section.categories .tab__img_laptops {
     height: 230px;
   }
-  section.categories .tabs .tab .tab__img_watches {
+  section.categories .tab__img_watches {
     height: 120px;
   }
-  section.categories .tabs .tab .tab__img_phones {
+  section.categories .tab__img_phones {
     height: 250px;
     margin-bottom: 24px;
     left: initial;
   }
-  section.categories .tabs .tab .tab__img_tablets {
+  section.categories .tab__img_tablets {
     height: 280px;
     margin-top: 24px;
   }
-  section.popular .items .item {
+  section.popular .item {
     width: 85%;
     max-width: initial;
   }
@@ -262,11 +261,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  section.best .items .item {
+  section.best .item {
     width: 85%;
     max-width: initial;
   }
-  section.best .items .item:not(:first-child) {
+  section.best .item:not(:first-child) {
     margin-top: 15px;
   }
   section.ideas .info {
@@ -282,30 +281,30 @@
   section.mail .banner {
     padding: 28px 20px;
   }
-  section.mail .banner .bar {
+  section.mail .bar {
     width: auto;
   }
-  section.mail .banner .bar input {
+  section.mail .bar input {
     padding: 0 13px;
   }
   footer nav {
     gap: 20px;
   }
-  footer nav .list {
+  footer .list {
     width: 45%;
   }
-  footer nav .list h5 {
+  footer .list h5 {
     margin-bottom: 12px;
   }
-  footer nav .list li:not(:first-child) {
+  footer .list li:not(:first-child) {
     margin-top: 8px;
   }
-  footer .credentials div {
+  footer .credit {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  footer .credentials a:after {
+  footer .credit__link:after {
     width: 13px;
     height: 13px;
   }
