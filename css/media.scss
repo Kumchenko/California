@@ -40,7 +40,7 @@
         font-size: calc(11px + 2 * ((100vw - 320px) / (1440 - 320)));
     }
 
-    header .banner .info p {
+    header .swiper-slide .info p {
         font-size: 1.143rem;
     }
 
@@ -90,7 +90,7 @@
     /* ====== BASE ====== */
 
     header {
-        .banner {
+        .swiper-slide {
             .info {
                 max-width: 50%;
                 h1 {
@@ -122,6 +122,10 @@
 @media screen and (max-width: 992px) {
 
     /* ====== BASE ====== */
+    :root {
+        --swiper-pagination-bullet-horizontal-gap: 12px;
+    }
+
     h2 {
         margin-bottom: 6px;
     }
@@ -141,23 +145,14 @@
                 margin-right: 13px;
             }
         }
-        .banner{
+        .swiper-slide{
             padding: 0 30px;
             .info {
                 padding: 25px 0;
             }
         }
-        .banner__btn{
-            width: 10px;
-            height: 24px;
-            top: calc(50% - 12px);
-            &.banner__prev{
-                left: 9px;
-            }
-            
-            &.banner__next{
-                right: 9px;
-            }
+        .swiper-pagination-bullet {
+            width: 15%;
         }
     }
 
@@ -264,7 +259,7 @@
         .links {
             display: none;
         }
-        .banner {
+        .swiper-slide {
             .info {
                 max-width: initial;
             }

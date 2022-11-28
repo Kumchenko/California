@@ -3,6 +3,16 @@
 /* =========================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+:root {
+  --swiper-navigation-size: 26px;
+  --swiper-navigation-color: #08090D;
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-horizontal-gap: 34px;
+  --swiper-pagination-bullet-size: 2px;
+  --swiper-pagination-bullet-inactive-opacity: 0.6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,6 +104,22 @@ button {
   color: #fff;
 }
 
+.link-arrow {
+  display: flex;
+}
+
+.link-arrow::after {
+  display: block;
+  content: " ";
+  width: 21px;
+  height: 18px;
+  margin-left: 3px;
+  background-image: url(../img/link-thin.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* HEADER Section */
 header nav {
   padding: 27px 0 31px;
@@ -144,54 +170,64 @@ header .buttons button:not(:last-child) {
 header .buttons button:hover {
   transform: scale(1.2);
 }
-header .banner {
+header .swiper {
+  width: 100%;
+  height: 550px;
+  border-radius: 32px;
+}
+header .swiper-horizontal > .swiper-pagination-bullets, header .swiper-pagination-bullets.swiper-pagination-horizontal, header .swiper-pagination-custom, header .swiper-pagination-fraction {
+  bottom: 32px;
+}
+header .swiper-pagination-bullet {
+  width: 194px;
+  height: 2px;
+  border-radius: 0;
+}
+header .swiper-slide {
   background-color: #DCE5E2;
   padding: 0 56px;
-  border-radius: 32px;
   display: flex;
-  max-height: 550px;
-  overflow: hidden;
 }
-header .banner .info {
+header .swiper-slide .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 45px 0;
 }
-header .banner .info h1 {
+header .swiper-slide .info h1 {
   width: 588px;
 }
-header .banner .info p {
+header .swiper-slide .info p {
   font-size: 16px;
   max-width: 565px;
   margin: 24px 0 25px;
 }
-header .banner .image {
+header .swiper-slide .image {
   overflow: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-header .banner__btn {
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 26px;
-  top: calc(50% - 13px);
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+header .slide-about {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-header .banner__btn.banner__prev {
-  background-image: url(../img/arrow-left-banner.svg);
-  left: 18px;
+header .slide-about .links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
 }
-header .banner__btn.banner__next {
-  background-image: url(../img/arrow-left-banner.svg);
-  transform: rotate(180deg);
-  right: 18px;
+header .slide-about a {
+  font-size: 17px;
+}
+header .slide-about i {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+header .slide-about p {
+  font-size: 20px;
 }
 
 /* CATEGORIES Section */
@@ -594,15 +630,4 @@ footer .credit__label {
 }
 footer .credit__link {
   margin-left: 7px;
-  display: flex;
-}
-footer .credit__link:after {
-  content: " ";
-  width: 21px;
-  height: 18px;
-  margin-left: 3px;
-  background-image: url(../img/link-thin.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

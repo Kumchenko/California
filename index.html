@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>California - Main</title>
     <link rel="shortcut icon" href="img/favicon.jpg">
+     <!-- Connecting Slider CSS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <!-- Connecting CSS styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -46,15 +48,42 @@
                     </button>
                  </div>
             </nav>
-            <div class="banner">
-                <button type="button" class="banner__btn banner__prev"></button>
-                <div class="info">
-                    <h1>The new phones are here take a look.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
-                    <button type="button" class="expl-btn">Explore</button>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide-about">
+                    <h2>Кирило Кумченко</h2>
+                    <div class="links">
+                        <a class="link-arrow" href="https://github.com/Kumchenko" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="link-arrow" href="https://www.figma.com/file/V7jYZfYjarJD09JnBcQawt/California?node-id=1%3A2&t=DMX9rvTYP5hWzexP-1" target="_blank" rel="noopener noreferrer">Figma Design</a>
+                    </div>
+                    <i class="fa-solid fa-hand-point-up"></i>
+                    <p>Спробуй цей зручний слайдер :)</p>
                 </div>
-                <img class="image" src="img/phone.png" alt="iPhones 13 Pro Max">
-                <button type="button" class="banner__btn banner__next"></button>
+                <div class="swiper-slide">
+                    <div class="info">
+                        <h1>The new phones are here take a look.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                        <button type="button" class="expl-btn">Explore</button>
+                    </div>
+                    <img class="image" src="img/phone.png" alt="iPhones 13 Pro Max">
+                </div>
+                <div class="swiper-slide">
+                    <div class="info">
+                        <h1>Laptops with discount.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                        <button type="button" class="expl-btn">Explore</button>
+                    </div>
+                    <img class="image" src="img/laptops.png" alt="iPhones 13 Pro Max">
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </header>
@@ -247,14 +276,18 @@
             <div class="credentials">
                 <div class="credit madeby">
                     <span class="credit__label">Made by:</span>
-                    <a class="credit__link" href="#" target="_blank" rel="noopener noreferrer">Azwedo</a>
+                    <a class="credit__link link-arrow" href="#" target="_blank" rel="noopener noreferrer">Azwedo</a>
                 </div>
                 <div class="credit poweredby">
                     <span class="credit__label">Powered by:</span>
-                    <a class="credit__link" href="https://github.com/Kumchenko" target="_blank" rel="noopener noreferrer">Kirill Kumchenko</a>
+                    <a class="credit__link link-arrow" href="https://github.com/Kumchenko" target="_blank" rel="noopener noreferrer">Kirill Kumchenko</a>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Connecting JS -->
+    <script src="https://kit.fontawesome.com/788d3ea337.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

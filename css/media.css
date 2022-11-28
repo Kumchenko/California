@@ -30,7 +30,7 @@
   h6 {
     font-size: calc(11px + 2 * (100vw - 320px) / 1120);
   }
-  header .banner .info p {
+  header .swiper-slide .info p {
     font-size: 1.143rem;
   }
   section.categories .tabs .tab .tab__desc {
@@ -60,13 +60,13 @@
 /* ====== 1200-992px ====== */
 @media screen and (max-width: 1200px) {
   /* ====== BASE ====== */
-  header .banner .info {
+  header .swiper-slide .info {
     max-width: 50%;
   }
-  header .banner .info h1 {
+  header .swiper-slide .info h1 {
     width: auto;
   }
-  header .banner .image {
+  header .swiper-slide .image {
     max-width: 50%;
   }
   section.best .item {
@@ -84,6 +84,9 @@
 /* ====== 768-992px ====== */
 @media screen and (max-width: 992px) {
   /* ====== BASE ====== */
+  :root {
+    --swiper-pagination-bullet-horizontal-gap: 12px;
+  }
   h2 {
     margin-bottom: 6px;
   }
@@ -99,22 +102,14 @@
   header .buttons button:not(:last-child) {
     margin-right: 13px;
   }
-  header .banner {
+  header .swiper-slide {
     padding: 0 30px;
   }
-  header .banner .info {
+  header .swiper-slide .info {
     padding: 25px 0;
   }
-  header .banner__btn {
-    width: 10px;
-    height: 24px;
-    top: calc(50% - 12px);
-  }
-  header .banner__btn.banner__prev {
-    left: 9px;
-  }
-  header .banner__btn.banner__next {
-    right: 9px;
+  header .swiper-pagination-bullet {
+    width: 15%;
   }
   section.categories .tab {
     margin: 0px;
@@ -190,10 +185,10 @@
   header .links {
     display: none;
   }
-  header .banner .info {
+  header .swiper-slide .info {
     max-width: initial;
   }
-  header .banner .image {
+  header .swiper-slide .image {
     display: none;
   }
   section.categories .tabs {
