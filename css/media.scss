@@ -256,9 +256,32 @@
     
     /* ====== BASE ====== */
     header {
-        .links {
-            display: none;
+        nav {
+            flex-wrap: wrap;
+            .links {
+                transition: margin-top 1.2s ease;
+                margin-top: -100px;
+                flex-direction: column;
+                order: 1;
+                width: 100%;
+                li {
+                    transition: left 0.4s ease;
+                    left: -200px;
+                }
+                li:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+            .links.active {
+                margin-top: 25px;
+                display: flex;
+                li {
+                    left: 0px;
+                }
+            }
         }
+        
         .swiper-slide {
             .info {
                 max-width: initial;
@@ -267,6 +290,9 @@
             .image {
                 display: none;
             }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
         }
     }
 

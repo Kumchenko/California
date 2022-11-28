@@ -182,13 +182,38 @@
 /* ====== 576-768px ====== */
 @media screen and (max-width: 768px) {
   /* ====== BASE ====== */
-  header .links {
-    display: none;
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav .links {
+    transition: margin-top 1.2s ease;
+    margin-top: -100px;
+    flex-direction: column;
+    order: 1;
+    width: 100%;
+  }
+  header nav .links li {
+    transition: left 0.4s ease;
+    left: -200px;
+  }
+  header nav .links li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  header nav .links.active {
+    margin-top: 25px;
+    display: flex;
+  }
+  header nav .links.active li {
+    left: 0px;
   }
   header .swiper-slide .info {
     max-width: initial;
   }
   header .swiper-slide .image {
+    display: none;
+  }
+  header .swiper-button-prev, header .swiper-button-next {
     display: none;
   }
   section.categories .tabs {
