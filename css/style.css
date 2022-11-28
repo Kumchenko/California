@@ -173,6 +173,7 @@ header .buttons button:hover:not(.burger) {
   transform: scale(1.2);
 }
 header .burger {
+  display: none;
   height: 18px;
 }
 header .burger span {

@@ -207,6 +207,9 @@
   header nav .links.active li {
     left: 0px;
   }
+  header .burger {
+    display: block;
+  }
   header .swiper-slide .info {
     max-width: initial;
   }
