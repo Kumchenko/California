@@ -219,6 +219,9 @@
   section.categories .tabs {
     flex-direction: column;
   }
+  section.categories .tabs .tab:hover {
+    top: 0;
+  }
   section.categories .hor, section.categories .vert {
     width: auto;
     margin: 0;
@@ -228,6 +231,9 @@
   }
   section.categories .hor .tab:not(:first-child) {
     margin-top: 16px;
+  }
+  section.categories .tab__img_tablets {
+    background-position: top;
   }
   section.popular .popular__desc {
     margin-bottom: 20px;

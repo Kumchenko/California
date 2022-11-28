@@ -299,6 +299,9 @@
     section.categories {
         .tabs {
             flex-direction: column;
+            .tab:hover {
+                top: 0;
+            }
         }
 
         .hor, .vert{
@@ -310,6 +313,10 @@
         }
         .hor .tab:not(:first-child) {
             margin-top: 16px;
+        }
+
+        .tab__img_tablets {
+            background-position: top;
         }
     }
 
