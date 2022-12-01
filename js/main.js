@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
     }
   });
 
-  let burger = document.querySelector("header .buttons .burger"),
-      links  = document.querySelector("header nav .links");
+  let burger = document.querySelector("header .nav__btn_burger"),
+      links  = document.querySelector("header .nav__links");
 
   burger.addEventListener("click", (e) => {
     burger.classList.toggle("active");

@@ -5,9 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 :root {
   --swiper-navigation-size: 26px;
-  --swiper-navigation-color: #08090D;
-  --swiper-pagination-color: #000;
-  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-navigation-color: $mainBlack;
+  --swiper-pagination-color: $mainBlack;
+  --swiper-pagination-bullet-inactive-color: $mainBlack;
   --swiper-pagination-bullet-horizontal-gap: 34px;
   --swiper-pagination-bullet-size: 2px;
   --swiper-pagination-bullet-inactive-opacity: 0.6;
@@ -121,23 +121,23 @@ button {
 }
 
 /* HEADER Section */
-header nav {
+header.header .nav {
   padding: 27px 0 31px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .links {
+header.header .nav__links {
   display: flex;
 }
-header .links li {
+header.header .nav__item {
   display: flex;
   align-items: center;
 }
-header .links li:not(:last-child) {
+header.header .nav__item:not(:last-child) {
   margin-right: 33px;
 }
-header .links li::after {
+header.header .nav__item::after {
   content: " ";
   background-image: url(../img/arrow-hover.svg);
   background-size: contain;
@@ -150,33 +150,33 @@ header .links li::after {
   transition: all 0.4s ease;
   opacity: 0;
 }
-header .links li:hover::after {
+header.header .nav__item:hover::after {
   opacity: 1;
 }
-header .links li .header__link {
+header.header .nav__link {
   text-transform: uppercase;
 }
-header .buttons {
+header.header .nav__btns {
   margin-right: 28px;
   display: flex;
   align-items: center;
 }
-header .buttons button {
+header.header .nav__btn {
   width: 24px;
   border: none;
   background-color: transparent;
 }
-header .buttons button:not(:last-child) {
+header.header .nav__btn:not(:last-child) {
   margin-right: 17px;
 }
-header .buttons button:hover:not(.burger) {
+header.header .nav__btn:hover:not(.nav__btn_burger) {
   transform: scale(1.2);
 }
-header .burger {
+header.header .nav__btn_burger {
   display: none;
   height: 18px;
 }
-header .burger span {
+header.header .nav__btn_burger span {
   width: 100%;
   height: 2px;
   background-color: #000;
@@ -187,7 +187,7 @@ header .burger span {
   transition: all 0.4s ease;
   border-radius: 2px;
 }
-header .burger::before {
+header.header .nav__btn_burger::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -198,7 +198,7 @@ header .burger::before {
   transition: all 0.4s ease;
   border-radius: 2px;
 }
-header .burger::after {
+header.header .nav__btn_burger::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -209,80 +209,80 @@ header .burger::after {
   transition: all 0.4s ease;
   border-radius: 2px;
 }
-header .burger.active {
+header.header .nav__btn_burger.active {
   height: 18px;
 }
-header .burger.active span {
+header.header .nav__btn_burger.active span {
   transform: scale(0);
 }
-header .burger.active::before {
+header.header .nav__btn_burger.active::before {
   top: 8px;
   transform: rotate(45deg);
 }
-header .burger.active::after {
+header.header .nav__btn_burger.active::after {
   bottom: 8px;
   transform: rotate(-45deg);
 }
-header .swiper {
+header.header .swiper {
   width: 100%;
   height: 550px;
   border-radius: 32px;
 }
-header .swiper-horizontal > .swiper-pagination-bullets, header .swiper-pagination-bullets.swiper-pagination-horizontal, header .swiper-pagination-custom, header .swiper-pagination-fraction {
+header.header .swiper-horizontal > .swiper-pagination-bullets, header.header .swiper-pagination-bullets.swiper-pagination-horizontal, header.header .swiper-pagination-custom, header.header .swiper-pagination-fraction {
   bottom: 32px;
 }
-header .swiper-pagination-bullet {
+header.header .swiper-pagination-bullet {
   width: 194px;
   height: 2px;
   border-radius: 0;
 }
-header .swiper-slide {
+header.header .swiper-slide {
   background-color: #DCE5E2;
   padding: 0 56px;
   display: flex;
 }
-header .swiper-slide .info {
+header.header .slide__info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 45px 0;
 }
-header .swiper-slide .info h1 {
+header.header .slide__header {
   width: 588px;
 }
-header .swiper-slide .info p {
+header.header .slide__desc {
+  font-size: 20px;
+}
+header.header .slide__text {
   font-size: 16px;
   max-width: 565px;
   margin: 24px 0 25px;
 }
-header .swiper-slide .image {
+header.header .slide__img {
   overflow: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-header .slide-about {
+header.header .slide_about {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-header .slide-about .links {
+header.header .slide_about .links {
   display: flex;
   gap: 12px;
   margin-bottom: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
-header .slide-about a {
+header.header .slide_about .links__link {
   font-size: 17px;
 }
-header .slide-about i {
+header.header .slide_about .slide__ico {
   font-size: 48px;
   margin-bottom: 15px;
-}
-header .slide-about p {
-  font-size: 20px;
 }
 
 /* CATEGORIES Section */
@@ -295,19 +295,27 @@ section.categories .categories__header {
 section.categories .categories__desc {
   font-size: 15px;
   text-align: center;
-  max-width: 625px;
-  margin: 0 auto 55px;
+  max-width: 680px;
+  margin: 0 auto;
 }
 section.categories .tabs {
-  margin: 0 auto;
+  margin-top: 55px;
   display: flex;
+}
+section.categories .tab_big {
+  padding-bottom: 38px;
+}
+section.categories .tab_flex {
+  display: flex;
+  align-items: center;
 }
 section.categories .hor {
   width: 50%;
   text-align: right;
 }
 section.categories .hor .tab {
-  padding: 0 42px;
+  padding-left: 42px;
+  padding-right: 42px;
   transition: top 0.4s ease;
 }
 section.categories .hor .tab:not(:first-child) {
@@ -331,13 +339,6 @@ section.categories .vert .tab__head, section.categories .vert .tab__desc {
 }
 section.categories .vert .tab:not(:first-child) {
   margin-left: 16px;
-}
-section.categories .tab_big {
-  padding-bottom: 38px;
-}
-section.categories .tab_flex {
-  display: flex;
-  align-items: center;
 }
 section.categories .tab {
   box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
@@ -401,7 +402,7 @@ section.popular .items {
 section.popular .item {
   width: 23%;
 }
-section.popular .item img {
+section.popular .item__img {
   width: 100%;
   height: 272px;
   padding: 28px;
@@ -410,10 +411,10 @@ section.popular .item img {
   margin: 0 auto;
   display: block;
 }
-section.popular .item h5 {
+section.popular .item__header {
   margin-top: 8px;
 }
-section.popular .item p {
+section.popular .item__desc {
   font-size: 1rem;
   padding-right: 41px;
   margin: 9px 0 30px;
@@ -422,7 +423,7 @@ section.popular .item p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-section.popular .item span {
+section.popular .item__price {
   font-size: 1.285rem;
   position: absolute;
   bottom: 1px;
@@ -455,11 +456,11 @@ section.best .item {
   padding: 41px 29px 0;
   text-align: center;
 }
-section.best .item button {
+section.best .item__btn {
   margin: 30px auto;
   padding: 14px 63px;
 }
-section.best .item img {
+section.best .item__img {
   width: 355px;
   height: 250px;
   -o-object-fit: contain;
@@ -485,7 +486,7 @@ section.ideas .info {
   display: flex;
   margin: 58px auto 72px;
 }
-section.ideas .info img {
+section.ideas .info__img {
   border-radius: 16px;
   width: 48%;
   max-width: 620px;
@@ -493,10 +494,10 @@ section.ideas .info img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-section.ideas .info .text {
+section.ideas .info__text {
   padding: 14px 35px;
 }
-section.ideas .info .text p {
+section.ideas .info__sentence {
   font-size: 24px;
   margin-bottom: 29px;
 }
@@ -536,7 +537,7 @@ section.search .search__bar {
   display: flex;
   align-items: center;
 }
-section.search .search__bar button {
+section.search .search__btn {
   width: 30px;
   height: 29px;
   background-image: url(../img/search.svg);
@@ -546,7 +547,7 @@ section.search .search__bar button {
   border: none;
   background-color: transparent;
 }
-section.search .search__bar input {
+section.search .search__input {
   margin-left: 20px;
   width: 100%;
   font-size: 1rem;
@@ -555,7 +556,7 @@ section.search .search__bar input {
   outline: none;
   border: none;
 }
-section.search .search_suggestions {
+section.search .search__suggestions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -563,7 +564,7 @@ section.search .search_suggestions {
   max-width: 640px;
   margin: 0 auto;
 }
-section.search .search_suggestions button {
+section.search .search__suggest {
   padding: 12px 22px 13px;
   background: transparent;
   border: 1px solid #C5C5C5;
@@ -571,7 +572,7 @@ section.search .search_suggestions button {
   font-size: 1rem;
   color: #000;
 }
-section.search .search_suggestions button:hover {
+section.search .search__suggest:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -602,7 +603,7 @@ section.mail .banner {
   border-radius: 16px;
   padding: 47px 40px 43px;
 }
-section.mail .bar {
+section.mail .mail__bar {
   width: 400px;
   height: 50px;
   margin: 0 auto;
@@ -612,7 +613,7 @@ section.mail .bar {
   flex-direction: row;
   overflow: hidden;
 }
-section.mail .bar input {
+section.mail .mail__input {
   width: 100%;
   padding: 16px 33px 17px 32px;
   background-color: transparent;
@@ -621,7 +622,7 @@ section.mail .bar input {
   border: none;
   font-size: 1rem;
 }
-section.mail .bar button {
+section.mail .mail__btn {
   background-color: #000;
   color: #fff;
   white-space: nowrap;
@@ -631,58 +632,58 @@ section.mail .bar button {
   border: none;
   font-size: 1rem;
 }
-section.mail .bar button:hover {
+section.mail .mail__btn:hover {
   opacity: 0.7;
 }
 
 /* FOOTER Section */
-footer {
+footer.footer {
   margin-top: 24px;
   border-top: 1px solid #DCE5E2;
 }
-footer nav {
+footer.footer .nav {
   display: flex;
   justify-content: space-between;
   padding: 49px 0 82px;
 }
-footer .about {
+footer.footer .about {
   width: 304px;
   top: 11px;
 }
-footer .about__logo {
+footer.footer .about__logo {
   width: 181px;
   height: 22px;
 }
-footer .about__desc {
+footer.footer .about__desc {
   margin-top: 14px;
   font-size: 16px;
 }
-footer .list h5 {
+footer.footer .list__header {
   margin-bottom: 20px;
 }
-footer .list li {
+footer.footer .list__item {
   font-size: 17px;
 }
-footer .list li:not(:first-child) {
+footer.footer .list__item:not(:first-child) {
   margin-top: 15px;
 }
-footer hr {
+footer.footer hr {
   border: none;
   border-top: 1px solid #DCE5E2;
 }
-footer .credentials {
+footer.footer .credentials {
   padding-top: 53px;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
 }
-footer .credit {
+footer.footer .credit {
   display: flex;
 }
-footer .credit__label {
+footer.footer .credit__label {
   font-family: "Readex Pro", sans-serif;
   white-space: nowrap;
 }
-footer .credit__link {
+footer.footer .credit__link {
   margin-left: 7px;
 }/*# sourceMappingURL=style.css.map */

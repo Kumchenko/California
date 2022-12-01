@@ -30,13 +30,19 @@
   h6 {
     font-size: calc(11px + 2 * (100vw - 320px) / 1120);
   }
-  header .swiper-slide .info p {
+  header.header .swiper-slide .slide__text {
     font-size: 1.143rem;
+  }
+  header.header .swiper-slide .slide__desc {
+    font-size: 1.428rem;
+  }
+  section.categories .categories__desc {
+    font-size: 1.07rem;
   }
   section.categories .tabs .tab .tab__desc {
     font-size: 1.07rem;
   }
-  section.ideas .info .text p {
+  section.ideas .info__sentence {
     font-size: 1.715rem;
   }
   section.ideas .ideas__all {
@@ -47,35 +53,35 @@
     font-size: 1.143rem;
     margin-top: 9px;
   }
-  footer nav .list li {
+  footer.footer .list__item {
     font-size: 1.214rem;
   }
-  footer .about__desc {
+  footer.footer .about__desc {
     font-size: 1.143rem;
   }
-  footer .credentials {
+  footer.footer .credentials {
     font-size: 1.285rem;
   }
 }
 /* ====== 1200-992px ====== */
 @media screen and (max-width: 1200px) {
   /* ====== BASE ====== */
-  header .swiper-slide .info {
+  header.header .slider__info {
     max-width: 50%;
   }
-  header .swiper-slide .info h1 {
+  header.header .slide__header {
     width: auto;
   }
-  header .swiper-slide .image {
+  header.header .slide__img {
     max-width: 50%;
   }
   section.best .item {
     max-width: 32%;
   }
-  section.best .item button {
+  section.best .item__btn {
     padding: 14px 50px;
   }
-  section.best .item img {
+  section.best .item__img {
     width: auto;
     height: 215px;
     max-width: 100%;
@@ -93,22 +99,22 @@
   .expl-btn {
     padding: 12px 48px;
   }
-  header .links li:not(:last-child) {
+  header.header .nav__item:not(:last-child) {
     margin-right: 13px;
   }
-  header .buttons {
+  header.header .nav__btns {
     margin: 0;
   }
-  header .buttons button:not(:last-child) {
+  header.header .nav__btn:not(:last-child) {
     margin-right: 13px;
   }
-  header .swiper-slide {
+  header.header .swiper-slide {
     padding: 0 30px;
   }
-  header .swiper-slide .info {
+  header.header .slide__info {
     padding: 25px 0;
   }
-  header .swiper-pagination-bullet {
+  header.header .swiper-pagination-bullet {
     width: 15%;
   }
   section.categories .tab {
@@ -134,89 +140,89 @@
     width: 40%;
     max-width: 300px;
   }
-  section.popular .item img {
+  section.popular .item__img {
     height: 215px;
   }
-  section.best .item h4 {
+  section.best .item__desc {
     margin-bottom: 15px;
   }
-  section.best .item button {
+  section.best .item__btn {
     padding: 10px 25px;
     margin-top: auto;
   }
-  section.best .item img {
+  section.best .item__img {
     height: 145px;
   }
   section.search .search__bar {
     padding: 12px 14px 13px;
   }
-  section.search .search__bar button {
+  section.search .search__btn {
     width: 26px;
     height: 25px;
   }
-  section.search .search__bar input {
+  section.search .search__input {
     margin-left: 15px;
   }
-  section.mail .bar {
+  section.mail .mail__bar {
     width: 370px;
     height: 42px;
   }
-  section.mail .bar button {
+  section.mail .mail__input {
     padding: 0 20px;
   }
-  footer nav {
+  footer.footer nav {
     flex-wrap: wrap;
     padding: 30px 0 60px;
   }
-  footer .about {
+  footer.footer .about {
     width: 100%;
     top: 0;
   }
-  footer .about__desc {
+  footer.footer .about__desc {
     margin: 0.5em 0 1.5em;
   }
-  footer .credentials {
+  footer.footer .credentials {
     padding: 26px 0 5px;
   }
 }
 /* ====== 576-768px ====== */
 @media screen and (max-width: 768px) {
   /* ====== BASE ====== */
-  header nav {
+  header.header nav {
     flex-wrap: wrap;
   }
-  header nav .links {
+  header.header .nav__links {
     transition: margin-top 1.2s ease;
     margin-top: -100px;
     flex-direction: column;
     order: 1;
     width: 100%;
   }
-  header nav .links li {
+  header.header .nav__links .nav__item {
     transition: left 0.4s ease;
     left: -200px;
   }
-  header nav .links li:not(:last-child) {
+  header.header .nav__links .nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 15px;
   }
-  header nav .links.active {
+  header.header .nav__links.active {
     margin-top: 25px;
     display: flex;
   }
-  header nav .links.active li {
+  header.header .nav__links.active .nav__item {
     left: 0px;
   }
-  header .burger {
+  header.header .nav__btn_burger {
     display: block;
   }
-  header .swiper-slide .info {
+  header.header .slide__info {
     max-width: initial;
   }
-  header .swiper-slide .image {
+  header.header .slide__img {
     display: none;
   }
-  header .swiper-button-prev, header .swiper-button-next {
+  header.header .swiper-button-prev, header.header .swiper-button-next {
     display: none;
   }
   section.categories .tabs {
@@ -244,15 +250,15 @@
   section.best .best__desc {
     margin-bottom: 20px;
   }
-  section.best .item button {
+  section.best .item__btn {
     margin-bottom: 10px;
   }
 }
 /* ====== 320-576px ====== */
 @media screen and (max-width: 576px) {
   /* ====== BASE ====== */
-  section.categories .categories__desc {
-    margin-bottom: 25px;
+  section.categories .tabs {
+    margin-top: 25px;
   }
   section.categories .vert {
     flex-direction: column;
@@ -301,39 +307,39 @@
     flex-direction: column;
     margin: 16px auto;
   }
-  section.ideas .info img {
+  section.ideas .info__img {
     width: 100%;
   }
-  section.ideas .info .text p {
+  section.ideas .info__sentence {
     font-size: 1.4rem;
   }
   section.mail .banner {
     padding: 28px 20px;
   }
-  section.mail .bar {
+  section.mail .mail__bar {
     width: auto;
   }
-  section.mail .bar input {
+  section.mail .mail__input {
     padding: 0 13px;
   }
-  footer nav {
+  footer.footer nav {
     gap: 20px;
   }
-  footer .list {
+  footer.footer .list {
     width: 45%;
   }
-  footer .list h5 {
+  footer.footer .list__header {
     margin-bottom: 12px;
   }
-  footer .list li:not(:first-child) {
+  footer.footer .list__item:not(:first-child) {
     margin-top: 8px;
   }
-  footer .credit {
+  footer.footer .credit {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  footer .credit__link:after {
+  footer.footer .credit__link:after {
     width: 13px;
     height: 13px;
   }

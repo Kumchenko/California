@@ -19,34 +19,34 @@
 	<meta property="og:site_name" content="California">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
-                 <a href="/" class="header__home">
-                    <img src="img/logo.svg" alt="California" class="header__logo">
+            <nav class="nav">
+                 <a href="/" class="nav__home-link">
+                    <img src="img/logo.svg" alt="California" class="nav__home-img">
                  </a>
-                 <ul class="links">
-                    <li>
-                        <a href="#" class="header__link">All products</a>
+                 <ul class="nav__links">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">All products</a>
                     </li>
-                    <li>
-                        <a href="#" class="header__link">Solutions</a>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Solutions</a>
                     </li>
-                    <li>
-                        <a href="#" class="header__link">About</a>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
                     </li>
-                    <li>
-                        <a href="#" class="header__link">Support</a>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Support</a>
                     </li>
                  </ul>
-                 <div class="buttons">
-                    <button class="search" type="button">
-                        <img src="img/search.svg" alt="Search" class="header__icon">
+                 <div class="nav__btns">
+                    <button class="nav__btn nav__btn_search" type="button">
+                        <img src="img/search.svg" alt="Search" class="nav__icon">
                     </button>
-                    <button class="cart" type="button">
-                        <img src="img/cart.svg" alt="Cart" class="header__icon">
+                    <button class="nav__btn nav__btn_cart" type="button">
+                        <img src="img/cart.svg" alt="Cart" class="nav__icon">
                     </button>
-                    <button class="burger">
+                    <button class="nav__btn nav__btn_burger" type="button">
                         <span></span>
                     </button>
                  </div>
@@ -56,30 +56,30 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide slide-about">
-                    <h2>Кирило Кумченко</h2>
+                <div class="swiper-slide slide_about">
+                    <h2 class="slide__header">Кирило Кумченко</h2>
                     <div class="links">
-                        <a class="link-arrow" href="https://github.com/Kumchenko" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a class="link-arrow" href="https://www.figma.com/file/V7jYZfYjarJD09JnBcQawt/California?node-id=1%3A2&t=DMX9rvTYP5hWzexP-1" target="_blank" rel="noopener noreferrer">Figma Design</a>
+                        <a class="links__link link-arrow" href="https://github.com/Kumchenko" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="links__link link-arrow" href="https://www.figma.com/file/V7jYZfYjarJD09JnBcQawt/California?node-id=1%3A2&t=DMX9rvTYP5hWzexP-1" target="_blank" rel="noopener noreferrer">Figma Design</a>
                     </div>
-                    <i class="fa-solid fa-hand-point-up"></i>
-                    <p>Спробуй цей зручний слайдер :)</p>
+                    <i class="slide__ico fa-solid fa-hand-point-up"></i>
+                    <p class="slide__desc">Спробуй цей зручний слайдер :)</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="info">
-                        <h1>The new phones are here take a look.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
-                        <button type="button" class="expl-btn">Explore</button>
+                    <div class="slide__info">
+                        <h1 class="slide__header">The new phones are here take a look.</h1>
+                        <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                        <button class="slide__btn expl-btn" type="button">Explore</button>
                     </div>
-                    <img class="image" src="img/phone.png" alt="iPhones 13 Pro Max">
+                    <img class="slide__img" src="img/phone.png" alt="iPhones 13 Pro Max">
                 </div>
                 <div class="swiper-slide">
-                    <div class="info">
-                        <h2>Laptops with discount.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
-                        <button type="button" class="expl-btn">Explore</button>
+                    <div class="slide__info">
+                        <h2 class="slide__header">Laptops with discount.</h2>
+                        <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                        <button class="slide__btn expl-btn" type="button" class="expl-btn">Explore</button>
                     </div>
-                    <img class="image" src="img/laptops.png" alt="iPhones 13 Pro Max">
+                    <img class="slide__img" src="img/laptops.png" alt="MacBook Pro 16">
                 </div>
                 </div>
                 <!-- If we need pagination -->
@@ -93,7 +93,8 @@
     <section class="categories">
         <div class="container">
             <h2 class="categories__header">Shop our latest offers and categories</h2>
-            <p class="categories__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="categories__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.</p>
+            <p class="categories__desc">Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="tabs">
                 <div class="hor">
                     <div class="tab tab_big">
@@ -130,28 +131,28 @@
             <h6 class="popular__desc">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h6>
             <div class="items">
                 <div class="item">
-                    <img src="img/pop-item1.png" alt="MacBook Pro 13">
-                    <h5>MacBook Pro 13</h5>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                    <span>$ 1,200.00 USD</span>
+                    <img class="item__img" src="img/pop-item1.png" alt="MacBook Pro 13">
+                    <h5 class="item__header">MacBook Pro 13</h5>
+                    <p class="item__desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    <span class="item__price">$ 1,200.00 USD</span>
                 </div>
                 <div class="item">
-                    <img src="img/pop-item2.png" alt="Smart Galaxy Watch 3">
-                    <h5>Smart Galaxy Watch 3</h5>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                    <span>$ 199.00 USD</span>
+                    <img class="item__img" src="img/pop-item2.png" alt="Smart Galaxy Watch 3">
+                    <h5 class="item__header">Smart Galaxy Watch 3</h5>
+                    <p class="item__desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <span class="item__price">$ 199.00 USD</span>
                 </div>
                 <div class="item">
-                    <img src="img/pop-item3.png" alt="MacBook Air M1">
-                    <h5>MacBook Air M1</h5>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                    <span>$ 1,009.00 USD</span>
+                    <img class="item__img" src="img/pop-item3.png" alt="MacBook Air M1">
+                    <h5 class="item__header">MacBook Air M1</h5>
+                    <p class="item__desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <span class="item__price">$ 1,009.00 USD</span>
                 </div>
                 <div class="item">
-                    <img src="img/pop-item4.png" alt="iPad">
-                    <h5>iPad</h5>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                    <span>$ 610.00 USD</span>
+                    <img class="item__img" src="img/pop-item4.png" alt="iPad">
+                    <h5 class="item__header">iPad</h5>
+                    <p class="item__desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <span class="item__price">$ 610.00 USD</span>
                 </div>
             </div>
         </div>
@@ -162,22 +163,22 @@
             <h6 class="best__desc">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h6>
             <div class="items">
                 <div class="item">
-                    <h6>Smart light bulb pack</h6>
-                    <h4>Latest and gratest</h4>
-                    <button type="button" class="expl-btn">Explore</button>
-                    <img src="img/best-item1.png" alt="Two watches">
+                    <h6 class="item__header">Smart light bulb pack</h6>
+                    <h4 class="item__desc">Latest and gratest</h4>
+                    <button class="item__btn expl-btn" type="button">Explore</button>
+                    <img class="item__img" src="img/best-item1.png" alt="Two watches">
                 </div>
                 <div class="item">
-                    <h6>Smart light bulb pack</h6>
-                    <h4>Best selling</h4>
-                    <button type="button" class="expl-btn">Explore</button>
-                    <img src="img/best-item2.png" alt="Two watches">
+                    <h6 class="item__header">Smart light bulb pack</h6>
+                    <h4 class="item__desc">Best selling</h4>
+                    <button class="item__btn expl-btn" type="button">Explore</button>
+                    <img class="item__img" src="img/best-item2.png" alt="Two watches">
                 </div>
                 <div class="item">
-                    <h6>Smart light bulb pack</h6>
-                    <h4>Every product</h4>
-                    <button type="button" class="expl-btn">Explore</button>
-                    <img src="img/best-item3.png" alt="Two watches">
+                    <h6 class="item__header">Smart light bulb pack</h6>
+                    <h4 class="item__desc">Every product</h4>
+                    <button class="item__btn expl-btn" type="button">Explore</button>
+                    <img class="item__img" src="img/best-item3.png" alt="Two watches">
                 </div>
             </div>
         </div>
@@ -187,12 +188,12 @@
             <h2 class="ideas__header">Ideas have a place here</h2>
             <h6 class="ideas__desc">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h6>
             <div class="info">
-                <img src="img/book.png" alt="Opened book">
-                <div class="text">
-                    <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
-                    <p>Road Design Handbook For The International Road...</p>
-                    <p>The Best Kept Secrets About Creative People</p>
-                    <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+                <img class="info__img" src="img/book.png" alt="Opened book">
+                <div class="info__text">
+                    <p class="info__sentence">We Make It Easy To Find The Great Design Talent, Easier...</p>
+                    <p class="info__sentence">Road Design Handbook For The International Road...</p>
+                    <p class="info__sentence">The Best Kept Secrets About Creative People</p>
+                    <p class="info__sentence">We Make It Easy To Find The Great Design Talent, Easier...</p>
                 </div>
             </div>
             <a class="ideas__all" href="#">See All</a>
@@ -202,19 +203,19 @@
         <div class="container">
             <h2 class="search__header">Looking for anything else?</h2>
             <form class="search__bar" action="#">
-                <button type="submit"></button>
-                <input type="text" placeholder="Search keyword">
+                <button class="search__btn" type="submit"></button>
+                <input class="search__input" type="text" placeholder="Search keyword">
             </form>
-            <div class="search_suggestions">
-                <button type="button">iPhone</button>
-                <button type="button">Charger</button>
-                <button type="button">Gift</button>
-                <button type="button">Google Pixel 3</button>
-                <button type="button">Keyboard</button>
-                <button type="button">13 Pro Max</button>
-                <button type="button">iPhone 12</button>
-                <button type="button">Laptop</button>
-                <button type="button">Mobile</button>
+            <div class="search__suggestions">
+                <button class="search__suggest" type="button">iPhone</button>
+                <button class="search__suggest" type="button">Charger</button>
+                <button class="search__suggest" type="button">Gift</button>
+                <button class="search__suggest" type="button">Google Pixel 3</button>
+                <button class="search__suggest" type="button">Keyboard</button>
+                <button class="search__suggest" type="button">13 Pro Max</button>
+                <button class="search__suggest" type="button">iPhone 12</button>
+                <button class="search__suggest" type="button">Laptop</button>
+                <button class="search__suggest" type="button">Mobile</button>
             </div>
         </div>
     </section>
@@ -224,56 +225,56 @@
                 <h2 class="mail__header">Never miss a thing</h2>
                 <p class="mail__desc">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
                 <img class="mail__img" src="img/mail.png" alt="Laptop, phones and watch">
-                <form class="bar" action="#">
-                    <input type="text" placeholder="Your email">
-                    <button type="submit">Sign up</button>
+                <form class="mail__bar" action="#">
+                    <input class="mail__input" type="text" placeholder="Your email">
+                    <button class="mail__btn" type="submit">Sign up</button>
                 </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <nav>
+            <nav class="nav">
                 <div class="about">
-                    <a href="/" class="footer__home">
+                    <a href="/" class="about__home">
                         <img src="img/logo.svg" alt="California" class="about__logo">
                      </a>
                      <p class="about__desc">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
                 </div>
-                 <div class="list">
-                    <h5><a href="#">All products</a></h5>
+                <div class="list">
+                    <h5 class="list__header"><a href="#">All products</a></h5>
                     <ul>
-                        <li><a href="#">Phones</a></li>
-                        <li><a href="#">Watches</a></li>
-                        <li><a href="#">Tablets</a></li>
-                        <li><a href="#">Laptops</a></li>
-                     </ul>
-                 </div>
-                 <div class="list">
-                    <h5><a href="#">Company</a></h5>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li class="list__item"><a href="#">Phones</a></li>
+                        <li class="list__item"><a href="#">Watches</a></li>
+                        <li class="list__item"><a href="#">Tablets</a></li>
+                        <li class="list__item"><a href="#">Laptops</a></li>
                     </ul>
-                 </div>
-                 <div class="list">
-                    <h5><a href="#">Support</a></h5>
+                </div>
+                <div class="list">
+                    <h5 class="list__header"><a href="#">Company</a></h5>
                     <ul>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Licensing</a></li>
-                        <li><a href="#">Change Log</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="list__item"><a href="#">About</a></li>
+                        <li class="list__item"><a href="#">Support</a></li>
                     </ul>
-                 </div>
-                 <div class="list">
-                    <h5><a href="#">Follow Us</a></h5>
+                </div>
+                <div class="list">
+                    <h5 class="list__header"><a href="#">Support</a></h5>
                     <ul>
-                       <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                       <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                       <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                       <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li class="list__item"><a href="#">Style Guide</a></li>
+                        <li class="list__item"><a href="#">Licensing</a></li>
+                        <li class="list__item"><a href="#">Change Log</a></li>
+                        <li class="list__item"><a href="#">Contact</a></li>
                     </ul>
-                 </div>
+                </div>
+                <div class="list">
+                    <h5 class="list__header"><a href="#">Follow Us</a></h5>
+                    <ul>
+                        <li class="list__item"><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li class="list__item"><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li class="list__item"><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li class="list__item"><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    </ul>
+                </div>
             </nav>
             <hr>
             <div class="credentials">

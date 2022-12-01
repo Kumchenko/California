@@ -40,8 +40,16 @@
         font-size: calc(11px + 2 * ((100vw - 320px) / (1440 - 320)));
     }
 
-    header .swiper-slide .info p {
+    header.header .swiper-slide .slide__text {
         font-size: 1.143rem;
+    }
+
+    header.header .swiper-slide .slide__desc {
+        font-size: 1.428rem;
+    }
+
+    section.categories .categories__desc {
+        font-size: 1.07rem;
     }
 
     section.categories .tabs .tab .tab__desc {
@@ -49,7 +57,7 @@
     }
 
     section.ideas{
-        .info .text p {
+        .info__sentence {
             font-size: 1.715rem;
         }
         
@@ -65,11 +73,9 @@
         margin-top: 9px;
     }
 
-    footer{
-        nav {
-            .list li {
-                font-size: 1.214rem;
-            }
+    footer.footer{
+        .list__item {
+            font-size: 1.214rem;
         }
 
         .about__desc {
@@ -89,27 +95,26 @@
 
     /* ====== BASE ====== */
 
-    header {
-        .swiper-slide {
-            .info {
-                max-width: 50%;
-                h1 {
-                    width: auto;
-                }
-            }
-            .image {
-                max-width: 50%;
-            }
+    header.header {
+        .slider__info {
+            max-width: 50%;
+        }
+        .slide__header {
+            width: auto;
+        }
+        .slide__img {
+            max-width: 50%;
         }
     } 
 
-    section.best .item {
-        max-width: 32%;
-        button {
+    section.best {
+        .item {
+            max-width: 32%;
+        }
+        .item__btn {
             padding: 14px 50px;
         }
-    
-        img {
+        .item__img {
             width: auto;
             height: 215px;
             max-width: 100%;
@@ -134,22 +139,21 @@
         padding: 12px 48px;
     }
     
-    header {
-        .links li:not(:last-child) {
+    header.header {
+        .nav__item:not(:last-child) {
             margin-right: 13px;
         }
-
-        .buttons {
+        .nav__btns {
             margin: 0;
-            button:not(:last-child) {
-                margin-right: 13px;
-            }
+        }
+        .nav__btn:not(:last-child) {
+            margin-right: 13px;
         }
         .swiper-slide{
             padding: 0 30px;
-            .info {
-                padding: 25px 0;
-            }
+        }
+        .slide__info {
+            padding: 25px 0;
         }
         .swiper-pagination-bullet {
             width: 15%;
@@ -188,48 +192,51 @@
         .item {
             width: 40%;
             max-width: 300px;
-            img{
-                height: 215px;
-            }
+        }
+        .item__img{
+            height: 215px;
         }
     }
 
-    section.best .item {
-        h4 {
+    section.best {
+        .item__desc {
             margin-bottom: 15px;
         }
     
-        button {
+        .item__btn {
             padding: 10px 25px;
             margin-top: auto;
         }
     
-        img {
+        .item__img {
             height: 145px;
         }
     }
     
-    section.search .search__bar {
-        padding: 12px 14px 13px;
-        button {
+    section.search {
+        .search__bar {
+            padding: 12px 14px 13px;
+        }
+        .search__btn {
             width: 26px;
             height: 25px;
         }
-    
-        input {
+        .search__input {
             margin-left: 15px;
         }
     }
 
-    section.mail .bar {
-        width: 370px;
-        height: 42px;
-        button {
+    section.mail {
+        .mail__bar {
+            width: 370px;
+            height: 42px;
+        }
+        .mail__input {
             padding: 0 20px;
         }
     }
 
-    footer {
+    footer.footer {
         nav {
             flex-wrap: wrap;
             padding: 30px 0 60px;
@@ -255,45 +262,42 @@
 @media screen and (max-width: 768px) {
     
     /* ====== BASE ====== */
-    header {
+    header.header {
         nav {
             flex-wrap: wrap;
-            .links {
-                transition: margin-top 1.2s ease;
-                margin-top: -100px;
-                flex-direction: column;
-                order: 1;
-                width: 100%;
-                li {
-                    transition: left 0.4s ease;
-                    left: -200px;
-                }
-                li:not(:last-child) {
+        }
+        .nav__links {
+            transition: margin-top 1.2s ease;
+            margin-top: -100px;
+            flex-direction: column;
+            order: 1;
+            width: 100%;
+            .nav__item {
+                transition: left 0.4s ease;
+                left: -200px;
+                &:not(:last-child) {
                     margin-right: 0;
                     margin-bottom: 15px;
                 }
             }
-            .links.active {
-                margin-top: 25px;
-                display: flex;
-                li {
-                    left: 0px;
-                }
+        }
+        .nav__links.active {
+            margin-top: 25px;
+            display: flex;
+            .nav__item {
+                left: 0px;
             }
         }
         
-        .burger {
+        .nav__btn_burger {
             display: block;
         }
-        
-        .swiper-slide {
-            .info {
-                max-width: initial;
-            }
-        
-            .image {
-                display: none;
-            }
+        .slide__info {
+            max-width: initial;
+        }
+    
+        .slide__img {
+            display: none;
         }
         .swiper-button-prev, .swiper-button-next {
             display: none;
@@ -332,7 +336,7 @@
         .best__desc {
             margin-bottom: 20px;
         }
-        .item button {
+        .item__btn {
             margin-bottom: 10px;
         }
     }
@@ -344,8 +348,8 @@
     
     /* ====== BASE ====== */
     section.categories {
-        .categories__desc {
-            margin-bottom: 25px;
+        .tabs {
+            margin-top: 25px;
         }
 
         .vert {
@@ -402,13 +406,15 @@
         }
     }
 
-    section.ideas .info {
-        flex-direction: column;
-        margin: 16px auto;
-        img {
+    section.ideas {
+        .info {
+            flex-direction: column;
+            margin: 16px auto;
+        }
+        .info__img {
             width: 100%;
         }
-        .text p {
+        .info__sentence {
             font-size: 1.4rem;
         }
     }
@@ -417,27 +423,27 @@
         .banner {
             padding: 28px 20px;
         }
-        .bar {
+        .mail__bar {
             width: auto;
-            input {
-                padding: 0 13px;
-            }
+        }
+        .mail__input {
+            padding: 0 13px;
         }
     }
     
 
-    footer {
+    footer.footer {
         nav {
             gap: 20px;
         }
         .list {
             width: 45%;
-            h5 {
-                margin-bottom: 12px;
-            }
-            li:not(:first-child) {
-                margin-top: 8px;
-            }
+        }
+        .list__header {
+            margin-bottom: 12px;
+        }
+        .list__item:not(:first-child) {
+            margin-top: 8px;
         }
         .credit {
             flex-wrap: wrap;
